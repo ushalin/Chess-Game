@@ -258,7 +258,7 @@ public class Chess extends JFrame implements ActionListener
 	    }
 	}
 
-	//Calls on boardcolour method to colour the board according
+	//Calls on boardcolour method to colour the board according to the users choice
 	boardcolour ();
 
 	//If it is white players turn, all of their pieces are enabled
@@ -281,11 +281,11 @@ public class Chess extends JFrame implements ActionListener
     {
 	frame = new JFrame ();  //declare the JFrame
 	frame.setSize (800, 800);  //set the size of the JFrame
-	frame.setLocation (150, 50);    //set location of the JFrame when it appears
+	frame.setLocationRelativeTo (null);  //Sets the location of the output window to the center of the screen
 	frame.setResizable (false);     //disables the ability for the user to resize the JFrame
-	frame.setDefaultCloseOperation (WindowConstants.EXIT_ON_CLOSE); //sets program to exit on closing
-	contentPane = (JPanel) frame.getContentPane ();  //Declares content pane, assigns it to the JFrame
-	contentPane.setLayout (new GridLayout (8, 8));  //sets the layout of the content pane to an 8 by 8 grid
+	frame.setDefaultCloseOperation (WindowConstants.EXIT_ON_CLOSE); //sets program to close on exit
+	contentPane = (JPanel) frame.getContentPane ();  //Declares content pane, typesets it to JPanel
+	contentPane.setLayout (new GridLayout (8, 8));  //sets the layout of the content pane to an 8 by 8 grid layout
 
 	//nested for loops add the JButton tiles to the grid layout
 	for (int x = 0 ; x < 8 ; x++)
@@ -309,7 +309,7 @@ public class Chess extends JFrame implements ActionListener
 
 
     //
-    //Method used when a button is pressed
+    //Method used when a JButton is pressed
     //
     public void actionPerformed (ActionEvent e)
     {
