@@ -82,9 +82,9 @@ import java.util.*;
 public class Chess extends JFrame implements ActionListener
 {
     //All global variables and objects used throughout the class
-    JFrame frame;
-    JPanel contentPane;
-    String buttonCheck = "", buttonText = "", WinCheck = "", ColourCheck = "", CheckPiece = "";
+    private JFrame frame;
+    private JPanel contentPane;
+    private String buttonCheck = "", buttonText = "", WinCheck = "", ColourCheck = "", CheckPiece = "";
     private static JButton tiles[] [] = new JButton [8] [8];
     private static int x = 0, y = 0, turn = 1, piece, board, count = 0;
     private static boolean BlackWin = true, WhiteWin = true, BlackCheck = false, WhiteCheck = false;
