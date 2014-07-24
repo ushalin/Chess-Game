@@ -106,7 +106,7 @@ public class MainMenu extends JFrame implements ActionListener, MouseListener, R
     Image instructionImg = instructionScreen.getImage ();
     ImageIcon settingsScreen = new ImageIcon ("settings.jpg");
     Image settingsImg = settingsScreen.getImage ();
-    ImageIcon creditScreen = new ImageIcon ("Credits Screen2.jpg");
+    ImageIcon creditScreen = new ImageIcon ("Credits Screen.jpg");
     Image creditImg = creditScreen.getImage ();
     ImageIcon pieceScreen = new ImageIcon ("Piece Movements.jpg");
     Image pieceImg = pieceScreen.getImage ();
