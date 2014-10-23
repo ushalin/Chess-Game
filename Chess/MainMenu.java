@@ -307,14 +307,14 @@ public class MainMenu extends JFrame implements ActionListener, MouseListener, R
 		//If the settings screen is not visible
 		if (drawCheck != 4)
 		{
-		    //Sleep the thread for 1 ms
-		    Thread.sleep (1);
+		    //Sleep the thread for 0 ms
+		    Thread.sleep (0);
 		}
 		//If its on any other screen besides the settings screen
 		else
 		{
-		    //Sleeps the thread for 60 ms
-		    Thread.sleep (60);
+		    //Sleeps the thread for 0 ms
+		    Thread.sleep (0);
 		}
 	    }
 
