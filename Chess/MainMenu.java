@@ -62,8 +62,8 @@
 // piece - int variable used to represent choice of pieces by user, it is then written into "settings.txt" which is used by ChessEngine() to draw the pieces
 // player1 - String variable to represent name of a user
 // player2 - String variable to represent name of the other player
-// vp1 - Vector that holds the name of player1
-// vp2 - Vector that holds the name of player2
+// playerName1 - Vector that holds the name of player1
+// playerName2 - Vector that holds the name of player2
 // t - Declares a thread, which is used to constantly repaint an image
 // stopThread - boolean variable used to stop thread from running
 // command - Object used to get the source of the action performed
@@ -94,49 +94,21 @@ public class MainMenu extends JFrame implements ActionListener, MouseListener, R
     JPanel contentPane;
     JButton start, settings, instructions, credits, exit, back, pieceinstr, pieceback;
     JCheckBox board1, board2, board3, board4, board5, piece1, piece2;
-    ButtonGroup groupboards = new ButtonGroup ();
-    ButtonGroup grouppieces = new ButtonGroup ();
+    ButtonGroup groupboards, grouppieces;
     JTextField textField, textField2;
-
-    ImageIcon startScreen = new ImageIcon ("ChessNameSelect.jpg");
-    Image startImg = startScreen.getImage ();
-    ImageIcon mainScreen = new ImageIcon ("ChessMENUBack.jpg");
-    Image mainImg = mainScreen.getImage ();
-    ImageIcon instructionScreen = new ImageIcon ("Instructions.jpg");
-    Image instructionImg = instructionScreen.getImage ();
-    ImageIcon settingsScreen = new ImageIcon ("settings.jpg");
-    Image settingsImg = settingsScreen.getImage ();
-    ImageIcon creditScreen = new ImageIcon ("Credits Screen.jpg");
-    Image creditImg = creditScreen.getImage ();
-    ImageIcon pieceScreen = new ImageIcon ("Piece Movements.jpg");
-    Image pieceImg = pieceScreen.getImage ();
-    ImageIcon b1 = new ImageIcon ("board1.jpg");
-    Image b1Screen = b1.getImage ();
-    ImageIcon b2 = new ImageIcon ("board2.jpg");
-    Image b2Screen = b2.getImage ();
-    ImageIcon b3 = new ImageIcon ("board3.jpg");
-    Image b3Screen = b3.getImage ();
-    ImageIcon b4 = new ImageIcon ("board4.jpg");
-    Image b4Screen = b4.getImage ();
-    ImageIcon b5 = new ImageIcon ("board5.jpg");
-    Image b5Screen = b5.getImage ();
-
-    Font font = new Font ("Comic Sans MS", Font.BOLD, 20);
+    Vector playerName1, playerName2;
+    Thread t;
+    Font font;
+    ImageIcon startScreen, mainScreen, instructionScreen, settingsScreen, creditScreen, pieceScreen, b1, b2, b3, b4, b5;
+    Image startImg, mainImg, instructionImg, settingsImg, creditImg, pieceImg, b1Screen, b2Screen, b3Screen, b4Screen, b5Screen;
 
     int drawCheck = 0;
     int visibleCheck = 0;
     int instrcheck = 0;
     int board = 1;
     int piece = 1;
-
     String player1, player2;
-
     boolean stopThread = false;
-
-    Vector vp1 = new Vector ();
-    Vector vp2 = new Vector ();
-
-    Thread t;
 
     //Creates a new JFrame and calls on MainMenu constructor
     public static void main (String args[])
@@ -161,7 +133,40 @@ public class MainMenu extends JFrame implements ActionListener, MouseListener, R
 	//Layout of contentPane is set to null, to allow canvas style layout
 	contentPane.setLayout (null);
 
-	//Creates all JButtons
+	//Creates vectors to store the name of both players
+	playerName1 = new Vector ();
+	playerName2 = new Vector ();
+
+	//Creates the font object with specific parameters
+	font = new Font ("Comic Sans MS", Font.BOLD, 20);
+
+	//Creates image objects with required images
+	startScreen = new ImageIcon ("NameSelect.jpg");
+	mainScreen = new ImageIcon ("Menu.jpg");
+	instructionScreen = new ImageIcon ("Instructions.jpg");
+	settingsScreen = new ImageIcon ("settings.jpg");
+	creditScreen = new ImageIcon ("Credits Screen.jpg");
+	pieceScreen = new ImageIcon ("Piece Movements.jpg");
+	b1 = new ImageIcon ("board1.jpg");
+	b2 = new ImageIcon ("board2.jpg");
+	b3 = new ImageIcon ("board3.jpg");
+	b4 = new ImageIcon ("board4.jpg");
+	b5 = new ImageIcon ("board5.jpg");
+
+	//Initializes objects to hold respective images
+	startImg = startScreen.getImage ();
+	mainImg = mainScreen.getImage ();
+	instructionImg = instructionScreen.getImage ();
+	settingsImg = settingsScreen.getImage ();
+	creditImg = creditScreen.getImage ();
+	pieceImg = pieceScreen.getImage ();
+	b1Screen = b1.getImage ();
+	b2Screen = b2.getImage ();
+	b3Screen = b3.getImage ();
+	b4Screen = b4.getImage ();
+	b5Screen = b5.getImage ();
+
+	//Creates all JButtons for the menu
 	start = new JButton ("Start");
 	settings = new JButton ("Settings");
 	instructions = new JButton ("Instructions");
@@ -184,11 +189,16 @@ public class MainMenu extends JFrame implements ActionListener, MouseListener, R
 	piece1.setSelected (true); //Sets piece1 as default piece type set
 	piece2 = new JCheckBox ("piece2");
 
-	//Creates JTextField for player1 name
+	//Creates JTextField for player1 and player2 name
 	textField = new JTextField ("", 20);
-
-	//Creates JTextField for player2 name
 	textField2 = new JTextField ("", 20);
+
+	//Creates the ButtonGroup for the boards and the piece sets
+	groupboards = new ButtonGroup ();
+	grouppieces = new ButtonGroup ();
+
+	//Initializes the thread object
+	t = new Thread (this);
 
 	//Adds the JCheckBoxes for board1, board2, board3, board4, board5 to the groupboards ButtonGroup
 	groupboards.add (board1);
@@ -281,9 +291,6 @@ public class MainMenu extends JFrame implements ActionListener, MouseListener, R
 	//Shows the JFrame and displays the output screen
 	this.show ();
 
-	//Initializes the thread object
-	t = new Thread (this);
-
 	//Begins the thread
 	t.start ();
     }
@@ -349,28 +356,30 @@ public class MainMenu extends JFrame implements ActionListener, MouseListener, R
 	//If drawCheck equals 3, draw the credits screen
 	else if (drawCheck == 3)
 	{
-	    // int i = 0;
-	    // do
-	    // {
-	    //     try
-	    //     {
-	    //         g.drawImage (creditImg, 0, i, null);
-	    //         Thread.sleep (10);
-	    //         i--;
-	    //         repaint ();
-	    //
-	    //         if (i == -1250)
-	    //         {
-	    //             i = 800;
-	    //             g.drawImage (creditImg, 0, i, null);
-	    //         }
-	    //     }
-	    //     catch (InterruptedException e)
-	    //     {
-	    //     }
-	    // }
-	    // while (i != -1250);
-	    //
+	    /*
+	    int i = 0;
+	    do
+	    {
+		try
+		{
+		    g.drawImage (creditImg, 0, i, null);
+		    Thread.sleep (10);
+		    i--;
+		    repaint ();
+
+		    if (i == -1250)
+		    {
+			i = 800;
+			g.drawImage (creditImg, 0, i, null);
+		    }
+		}
+		catch (InterruptedException e)
+		{
+		}
+	    }
+	    while (i != -1250);
+	    */
+
 	    g.drawImage (creditImg, 0, 0, null);
 	}
 
@@ -448,6 +457,7 @@ public class MainMenu extends JFrame implements ActionListener, MouseListener, R
     public void swingVisible ()
     {
 	//If visibleCheck equals 0, sets all main menu buttons to false, except for the back button
+	//User has clicked "Start"
 	if (visibleCheck == 0)
 	{
 	    start.setVisible (false);
@@ -460,6 +470,7 @@ public class MainMenu extends JFrame implements ActionListener, MouseListener, R
 	}
 
 	//If visibleCheck equals 1, sets all main menu buttons to true, and all JTextFields & JCheckBoxes to false
+	//User is on the Main Menu
 	else if (visibleCheck == 1)
 	{
 	    start.setVisible (true);
@@ -482,6 +493,7 @@ public class MainMenu extends JFrame implements ActionListener, MouseListener, R
 	}
 
 	//If visibleCheck equals 2, sets all JCheckBoxes to true, and sets piece instructions to false
+	//User is in the settings page
 	else if (visibleCheck == 2)
 	{
 	    board1.setVisible (true);
@@ -501,6 +513,7 @@ public class MainMenu extends JFrame implements ActionListener, MouseListener, R
 	}
 
 	//If visibleCheck equals 3, sets all main menu buttons to false, and sets piece instruction to true
+	//User is in second instructions page
 	else if (visibleCheck == 3)
 	{
 	    start.setVisible (false);
@@ -508,8 +521,8 @@ public class MainMenu extends JFrame implements ActionListener, MouseListener, R
 	    instructions.setVisible (false);
 	    credits.setVisible (false);
 	    exit.setVisible (false);
-	    pieceinstr.setVisible (true);
 	    back.setVisible (false);
+	    pieceinstr.setVisible (true);
 	    pieceback.setVisible (true);
 	}
     }
@@ -768,8 +781,8 @@ public class MainMenu extends JFrame implements ActionListener, MouseListener, R
 	    }
 
 	    //Adds name of player1 and player2 to their respective Vectors
-	    vp1.addElement (player1);
-	    vp2.addElement (player2);
+	    playerName1.addElement (player1);
+	    playerName2.addElement (player2);
 
 	    //writes the board & piece set to file and check for possible errors.
 	    try
@@ -794,7 +807,7 @@ public class MainMenu extends JFrame implements ActionListener, MouseListener, R
 	    this.dispose ();
 
 	    //Calls on the ChessTesting constructor
-	    JFrame frame = new Chess (vp1, vp2);
+	    JFrame frame = new Chess (playerName1, playerName2);
 	}
     }
 
