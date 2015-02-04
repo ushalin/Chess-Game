@@ -156,33 +156,33 @@ public class Chess extends JFrame implements ActionListener
 	    this.tiles [i] [3].setHorizontalTextPosition (AbstractButton.CENTER); //Centers the text horizontally
 	    this.tiles [i] [3].setVerticalTextPosition (AbstractButton.BOTTOM); //Sets the text to the bottom vertically
 
-	    this.tiles [i] [4] = new JButton ("BKing");  //Sets button text
-	    this.tiles [i] [4].setIcon (this.bking);  //Sets icon
+	    this.tiles [i] [4] = new JButton ("BKing"); //Sets button text
+	    this.tiles [i] [4].setIcon (this.bking); //Sets icon
 	    this.tiles [i] [4].setHorizontalTextPosition (AbstractButton.CENTER); //Centers the text horizontally
-	    this.tiles [i] [4].setVerticalTextPosition (AbstractButton.BOTTOM);  //Sets the text to the bottom vertically
+	    this.tiles [i] [4].setVerticalTextPosition (AbstractButton.BOTTOM); //Sets the text to the bottom vertically
 
-	    this.tiles [i] [5] = new JButton ("BBishop");   //Sets button text
-	    this.tiles [i] [5].setIcon (this.bbishop);   //Sets icon
-	    this.tiles [i] [5].setHorizontalTextPosition (AbstractButton.CENTER);  //Centers the text horizontally
-	    this.tiles [i] [5].setVerticalTextPosition (AbstractButton.BOTTOM);  //Sets the text to the bottom vertically
+	    this.tiles [i] [5] = new JButton ("BBishop"); //Sets button text
+	    this.tiles [i] [5].setIcon (this.bbishop); //Sets icon
+	    this.tiles [i] [5].setHorizontalTextPosition (AbstractButton.CENTER); //Centers the text horizontally
+	    this.tiles [i] [5].setVerticalTextPosition (AbstractButton.BOTTOM); //Sets the text to the bottom vertically
 
-	    this.tiles [i] [6] = new JButton ("BKnight");   //Sets button text
-	    this.tiles [i] [6].setIcon (this.bknight);   //Sets icon
-	    this.tiles [i] [6].setHorizontalTextPosition (AbstractButton.CENTER);   //Centers the text horizontally
-	    this.tiles [i] [6].setVerticalTextPosition (AbstractButton.BOTTOM);   //Sets the text to the bottom vertically
+	    this.tiles [i] [6] = new JButton ("BKnight"); //Sets button text
+	    this.tiles [i] [6].setIcon (this.bknight); //Sets icon
+	    this.tiles [i] [6].setHorizontalTextPosition (AbstractButton.CENTER); //Centers the text horizontally
+	    this.tiles [i] [6].setVerticalTextPosition (AbstractButton.BOTTOM); //Sets the text to the bottom vertically
 
-	    this.tiles [i] [7] = new JButton ("BRook");    //Sets button text
-	    this.tiles [i] [7].setIcon (this.brook);    //Sets icon
-	    this.tiles [i] [7].setHorizontalTextPosition (AbstractButton.CENTER);  //Centers the text horizontally
-	    this.tiles [i] [7].setVerticalTextPosition (AbstractButton.BOTTOM);  //Sets the text to the bottom vertically
+	    this.tiles [i] [7] = new JButton ("BRook"); //Sets button text
+	    this.tiles [i] [7].setIcon (this.brook); //Sets icon
+	    this.tiles [i] [7].setHorizontalTextPosition (AbstractButton.CENTER); //Centers the text horizontally
+	    this.tiles [i] [7].setVerticalTextPosition (AbstractButton.BOTTOM); //Sets the text to the bottom vertically
 
-	    //if statement prevents out of bounds exceptions from tripping
+	    //If statement prevents out of bounds exceptions from tripping
 	    if (i > 0)
 	    {
 		for (int j = 0 ; j < 8 ; j++)
 		{
 		    this.tiles [i] [j] = new JButton ("BPawn"); //Sets button text
-		    this.tiles [i] [j].setIcon (this.bpawn);  //Sets icon
+		    this.tiles [i] [j].setIcon (this.bpawn); //Sets icon
 		    this.tiles [i] [j].setHorizontalTextPosition (AbstractButton.CENTER); //Centers the text horizontally
 		    this.tiles [i] [j].setVerticalTextPosition (AbstractButton.BOTTOM); //Sets the text to the bottom vertically
 		}
@@ -208,53 +208,53 @@ public class Chess extends JFrame implements ActionListener
 		{
 		    this.tiles [6] [j] = new JButton ("WPawn");  //Sets button text
 		    this.tiles [i] [j].setIcon (this.wpawn);  //Sets icon
-		    this.tiles [i] [j].setHorizontalTextPosition (AbstractButton.CENTER);  //Centers the text horizontally
-		    this.tiles [i] [j].setVerticalTextPosition (AbstractButton.BOTTOM);   //Sets the text to the bottom vertically
+		    this.tiles [i] [j].setHorizontalTextPosition (AbstractButton.CENTER); //Centers the text horizontally
+		    this.tiles [i] [j].setVerticalTextPosition (AbstractButton.BOTTOM); //Sets the text to the bottom vertically
 		}
 	    }
 
 	    //Sets the text for the all the pieces in the white teams except the pawns
 	    else
 	    {
-		this.tiles [i] [0] = new JButton ("WRook");  //Sets button text
+		this.tiles [i] [0] = new JButton ("WRook"); //Sets button text
 		this.tiles [i] [0].setIcon (this.wrook); //Sets icon
-		this.tiles [i] [0].setHorizontalTextPosition (AbstractButton.CENTER);  //Centers the text horizontally
+		this.tiles [i] [0].setHorizontalTextPosition (AbstractButton.CENTER); //Centers the text horizontally
 		this.tiles [i] [0].setVerticalTextPosition (AbstractButton.BOTTOM); //Sets the text to the bottom vertically
 
-		this.tiles [i] [1] = new JButton ("WKnight");  //Sets button text
-		this.tiles [i] [1].setIcon (this.wknight);  //Sets icon
-		this.tiles [i] [1].setHorizontalTextPosition (AbstractButton.CENTER);  //Centers the text horizontally
-		this.tiles [i] [1].setVerticalTextPosition (AbstractButton.BOTTOM);  //Sets the text to the bottom vertically
+		this.tiles [i] [1] = new JButton ("WKnight"); //Sets button text
+		this.tiles [i] [1].setIcon (this.wknight); //Sets icon
+		this.tiles [i] [1].setHorizontalTextPosition (AbstractButton.CENTER); //Centers the text horizontally
+		this.tiles [i] [1].setVerticalTextPosition (AbstractButton.BOTTOM); //Sets the text to the bottom vertically
 
-		this.tiles [i] [2] = new JButton ("WBishop");  //Sets button text
-		this.tiles [i] [2].setIcon (this.wbishop);  //Sets icon
-		this.tiles [i] [2].setHorizontalTextPosition (AbstractButton.CENTER);  //Centers the text horizontally
-		this.tiles [i] [2].setVerticalTextPosition (AbstractButton.BOTTOM);  //Sets the text to the bottom vertically
+		this.tiles [i] [2] = new JButton ("WBishop"); //Sets button text
+		this.tiles [i] [2].setIcon (this.wbishop); //Sets icon
+		this.tiles [i] [2].setHorizontalTextPosition (AbstractButton.CENTER); //Centers the text horizontally
+		this.tiles [i] [2].setVerticalTextPosition (AbstractButton.BOTTOM); //Sets the text to the bottom vertically
 
-		this.tiles [i] [3] = new JButton ("WKing");  //Sets button text
-		this.tiles [i] [3].setIcon (this.wking);  //Sets icon
-		this.tiles [i] [3].setHorizontalTextPosition (AbstractButton.CENTER);  //Centers the text horizontally
-		this.tiles [i] [3].setVerticalTextPosition (AbstractButton.BOTTOM);  //Sets the text to the bottom vertically
+		this.tiles [i] [3] = new JButton ("WKing"); //Sets button text
+		this.tiles [i] [3].setIcon (this.wking); //Sets icon
+		this.tiles [i] [3].setHorizontalTextPosition (AbstractButton.CENTER); //Centers the text horizontally
+		this.tiles [i] [3].setVerticalTextPosition (AbstractButton.BOTTOM); //Sets the text to the bottom vertically
 
-		this.tiles [i] [4] = new JButton ("WQueen");  //Sets button text
-		this.tiles [i] [4].setIcon (this.wqueen);  //Sets icon
-		this.tiles [i] [4].setHorizontalTextPosition (AbstractButton.CENTER);  //Centers the text horizontally
-		this.tiles [i] [4].setVerticalTextPosition (AbstractButton.BOTTOM);  //Sets the text to the bottom vertically
+		this.tiles [i] [4] = new JButton ("WQueen"); //Sets button text
+		this.tiles [i] [4].setIcon (this.wqueen); //Sets icon
+		this.tiles [i] [4].setHorizontalTextPosition (AbstractButton.CENTER); //Centers the text horizontally
+		this.tiles [i] [4].setVerticalTextPosition (AbstractButton.BOTTOM); //Sets the text to the bottom vertically
 
-		this.tiles [i] [5] = new JButton ("WBishop");    //Sets button text
-		this.tiles [i] [5].setIcon (this.wbishop);   //Sets icon
-		this.tiles [i] [5].setHorizontalTextPosition (AbstractButton.CENTER);   //Centers the text horizontally
-		this.tiles [i] [5].setVerticalTextPosition (AbstractButton.BOTTOM);  //Sets the text to the bottom vertically
+		this.tiles [i] [5] = new JButton ("WBishop"); //Sets button text
+		this.tiles [i] [5].setIcon (this.wbishop); //Sets icon
+		this.tiles [i] [5].setHorizontalTextPosition (AbstractButton.CENTER); //Centers the text horizontally
+		this.tiles [i] [5].setVerticalTextPosition (AbstractButton.BOTTOM); //Sets the text to the bottom vertically
 
-		this.tiles [i] [6] = new JButton ("WKnight");   //Sets button text
-		this.tiles [i] [6].setIcon (this.wknight);  //Sets icon
-		this.tiles [i] [6].setHorizontalTextPosition (AbstractButton.CENTER);  //Centers the text horizontally
-		this.tiles [i] [6].setVerticalTextPosition (AbstractButton.BOTTOM);  //Sets the text to the bottom vertically
+		this.tiles [i] [6] = new JButton ("WKnight"); //Sets button text
+		this.tiles [i] [6].setIcon (this.wknight); //Sets icon
+		this.tiles [i] [6].setHorizontalTextPosition (AbstractButton.CENTER); //Centers the text horizontally
+		this.tiles [i] [6].setVerticalTextPosition (AbstractButton.BOTTOM); //Sets the text to the bottom vertically
 
-		this.tiles [i] [7] = new JButton ("WRook");  //Sets button text
+		this.tiles [i] [7] = new JButton ("WRook"); //Sets button text
 		this.tiles [i] [7].setIcon (this.wrook); //Sets icon
 		this.tiles [i] [7].setHorizontalTextPosition (AbstractButton.CENTER); //Centers the text horizontally
-		this.tiles [i] [7].setVerticalTextPosition (AbstractButton.BOTTOM);  //Sets the text to the bottom vertically
+		this.tiles [i] [7].setVerticalTextPosition (AbstractButton.BOTTOM); //Sets the text to the bottom vertically
 	    }
 	}
 
@@ -279,32 +279,32 @@ public class Chess extends JFrame implements ActionListener
 
     public void ChessEngine ()
     {
-	frame = new JFrame ();  //declare the JFrame
-	frame.setSize (800, 800);  //set the size of the JFrame
-	frame.setLocationRelativeTo (null);  //Sets the location of the output window to the center of the screen
-	frame.setResizable (false);     //disables the ability for the user to resize the JFrame
-	frame.setDefaultCloseOperation (WindowConstants.EXIT_ON_CLOSE); //sets program to close on exit
-	contentPane = (JPanel) frame.getContentPane ();  //Declares content pane, typesets it to JPanel
-	contentPane.setLayout (new GridLayout (8, 8));  //sets the layout of the content pane to an 8 by 8 grid layout
+	frame = new JFrame (); //Declare the JFrame
+	frame.setSize (800, 800); //Sets the size of the JFrame
+	frame.setLocationRelativeTo (null); //Sets the location of the output window to the center of the screen
+	frame.setResizable (false); //Disables the ability for the user to resize the JFrame
+	frame.setDefaultCloseOperation (WindowConstants.EXIT_ON_CLOSE); //Sets program to close on exit
+	contentPane = (JPanel) frame.getContentPane (); //Declares content pane, typesets it to JPanel
+	contentPane.setLayout (new GridLayout (8, 8)); //Sets the layout of the content pane to an 8 by 8 grid layout
 
-	//nested for loops add the JButton tiles to the grid layout
+	//Nested for loops add the JButton tiles to the grid layout
 	for (int x = 0 ; x < 8 ; x++)
 	{
 	    for (int y = 0 ; y < 8 ; y++)
 	    {
-		contentPane.add (this.tiles [x] [y]);  //adds tiles into grid
+		contentPane.add (this.tiles [x] [y]); //Adds tiles into grid
 	    }
 	}
 
-	//nested for loops add action listeners to the buttons
+	//Nested for loops add action listeners to the buttons
 	for (int i = 0 ; i < 8 ; i++)
 	{
 	    for (int j = 0 ; j < 8 ; j++)
 	    {
-		this.tiles [i] [j].addActionListener (this); //creates action listeners for the buttons
+		this.tiles [i] [j].addActionListener (this); //Creates action listeners for the buttons
 	    }
 	}
-	frame.show ();  //create the frame
+	frame.show (); //Displays the frame
     }
 
 
@@ -313,106 +313,106 @@ public class Chess extends JFrame implements ActionListener
     //
     public void actionPerformed (ActionEvent e)
     {
-	Object command = e.getSource ();    //object records which button was pressed
-	this.BlackWin = true;    //reset the boolean to true
-	this.WhiteWin = true;    //reset the boolean to true
+	Object command = e.getSource (); //Object records which button was pressed
+	this.BlackWin = true; //Reset the boolean to true
+	this.WhiteWin = true; //Reset the boolean to true
 
-	//nested for loops scan the board for the button that was selected
+	//Nested for loops scan the board for the button that was selected
 	for (int i = 0 ; i < 8 ; i++)
 	{
 	    for (int j = 0 ; j < 8 ; j++)
 	    {
-		//if checks if the button is the one that was selected
+		//If checks if the button is the one that was selected
 		if (command == this.tiles [i] [j])
 		{
-		    //assigns the text of the selected button to a variable
+		    //Assigns the text of the selected button to a variable
 		    buttonText = this.tiles [i] [j].getText ();
 
 		    //Checks if it is the black team's turn and they clicked a white piece
 		    if (this.turn % 2 == 0 && this.buttonText.charAt (0) == 'W')
 		    {
-			Move (i, j, this.x, this.y);  //calls move method to move the piece
-			Check ();   //calls check method to see if either player is in check
-			this.turn++;     //increases turn variable to an odd number to indicate white team's turn
+			Move (i, j, this.x, this.y); //Calls Move method to move the piece
+			Check (); //Calls Check method to see if either player is in check
+			this.turn++; //Increases turn variable to an odd number to indicate white team's turn
 
-			//nested for loops disable all tiles
+			//Nested for loops disable all tiles
 			for (int ii = 0 ; ii < 8 ; ii++)
 			{
 			    for (int jj = 0 ; jj < 8 ; jj++)
 			    {
-				this.tiles [ii] [jj].setEnabled (false); //disables tiles
+				this.tiles [ii] [jj].setEnabled (false); //Disables tiles
 			    }
 			}
 
-			//nested for loops enable the other team's pieces, because it is now their turn
+			//Nested for loops enable the other team's pieces, because it is now their turn
 			for (int ii = 0 ; ii < 8 ; ii++)
 			{
 			    for (int jj = 0 ; jj < 8 ; jj++)
 			    {
-				//checks if the tile belongs to the white team
+				//Checks if the tile belongs to the white team
 				if (this.tiles [ii] [jj].getText ().charAt (0) == 'W')
 				{
-				    this.tiles [ii] [jj].setEnabled (true); //enables the tiles
+				    this.tiles [ii] [jj].setEnabled (true); //Enables the tiles
 				}
 			    }
 			}
-			this.buttonCheck = " "; //clears buttoncheck variable
-			boardcolour (); //recolors the board
+			this.buttonCheck = " "; //Clears buttoncheck variable
+			boardcolour (); //Recolors the board
 		    }
 
 		    //Checks if it is the white team's turn and they clicked a black piece
 		    else if (this.turn % 2 != 0 && this.buttonText.charAt (0) == 'B')
 		    {
-			Move (i, j, this.x, this.y); //calls move method to move the piece
-			Check ();       //calls check method to see if either player is in check
-			this.turn++;         //increases turn variable to an even number to indicate black team's turn
+			Move (i, j, this.x, this.y); //Calls Move method to move the piece
+			Check (); //Calls Check method to see if either player is in check
+			this.turn++; //Increases turn variable to an even number to indicate black team's turn
 
-			//nested for loops disable all tiles
+			//Nested for loops disable all tiles
 			for (int ii = 0 ; ii < 8 ; ii++)
 			{
 			    for (int jj = 0 ; jj < 8 ; jj++)
 			    {
-				this.tiles [ii] [jj].setEnabled (false); //disables tiles
+				this.tiles [ii] [jj].setEnabled (false); //Disables tiles
 			    }
 			}
 
-			//nested for loops enable the other team's pieces, because it is now their turn
+			//Nested for loops enable the other team's pieces, because it is now their turn
 			for (int ii = 0 ; ii < 8 ; ii++)
 			{
 			    for (int jj = 0 ; jj < 8 ; jj++)
 			    {
-				//checks if the tile belongs to the black team
+				//Checks if the tile belongs to the black team
 				if (this.tiles [ii] [jj].getText ().charAt (0) == 'B')
 				{
-				    this.tiles [ii] [jj].setEnabled (true); //enables the tiles
+				    this.tiles [ii] [jj].setEnabled (true); //Enables the tiles
 				}
 			    }
 			}
-			this.buttonCheck = " "; //clears the buttonCheck variable
-			boardcolour (); //recolors the board
+			this.buttonCheck = " "; //Clears the buttonCheck variable
+			boardcolour (); //Recolors the board
 		    }
 
-		    //checks if the button selected is tha same button as the last button selected, this indicates deselecting a piece
+		    //Checks if the button selected is tha same button as the last button selected, this indicates deselecting a piece
 		    else if (this.buttonText == this.buttonCheck)
 		    {
-			//nested for loops disable all tiles
+			//Nested for loops disable all tiles
 			for (int iii = 0 ; iii < 8 ; iii++)
 			{
 			    for (int jjj = 0 ; jjj < 8 ; jjj++)
 			    {
-				this.tiles [iii] [jjj].setEnabled (false); //disables the tiles
+				this.tiles [iii] [jjj].setEnabled (false); //Disables the tiles
 			    }
 			}
 
-			//checks if it the black team's turn
+			//Checks if it the black team's turn
 			if (this.turn % 2 == 0)
 			{
-			    //nested for loops scan the board for black pieces
+			    //Nested for loops scan the board for black pieces
 			    for (int iii = 0 ; iii < 8 ; iii++)
 			    {
 				for (int jjj = 0 ; jjj < 8 ; jjj++)
 				{
-				    //checks if the tile is a black piece
+				    //Checks if the tile is a black piece
 				    if (this.tiles [iii] [jjj].getText ().charAt (0) == 'B')
 				    {
 					this.tiles [iii] [jjj].setEnabled (true); //Re-enables the black tiles
@@ -421,15 +421,15 @@ public class Chess extends JFrame implements ActionListener
 			    }
 			}
 
-			//if it's not the black team's turn, it is the white team's turn
+			//If it's not the black team's turn, it is the white team's turn
 			else
 			{
-			    //nested for loops scan the board for white pieces
+			    //Nested for loops scan the board for white pieces
 			    for (int iii = 0 ; iii < 8 ; iii++)
 			    {
 				for (int jjj = 0 ; jjj < 8 ; jjj++)
 				{
-				    //checks if the tile is a black piece
+				    //Checks if the tile is a black piece
 				    if (this.tiles [iii] [jjj].getText ().charAt (0) == 'W')
 				    {
 					this.tiles [iii] [jjj].setEnabled (true); //Re-enables the white tiles
@@ -437,267 +437,268 @@ public class Chess extends JFrame implements ActionListener
 				}
 			    }
 			}
-			this.buttonCheck = " "; //clears the buttoncheck variable
-			boardcolour (); //recolors the board
+			this.buttonCheck = " "; //Clears the buttoncheck variable
+			boardcolour (); //Recolors the board
 		    }
 
-		    //checks if the black king was selected
+		    //Checks if the black king was selected
 		    else if (this.buttonText == "BKing")
 		    {
-			this.buttonCheck = this.buttonText; //sets buttoncheck variable to allow deselection
-			BKing (i, j); //calls BKing method, sends i and j as the position of the current piece
-			this.x = i; //records vertical grid position for use in movement
-			this.y = j; //records horizontal grid position for use in movement
+			this.buttonCheck = this.buttonText; //Sets buttoncheck variable to allow deselection
+			BKing (i, j); //Calls BKing method, sends i and j as the position of the current piece
+			this.x = i; //Records vertical grid position for use in movement
+			this.y = j; //Records horizontal grid position for use in movement
 		    }
 
-		    //checks if the black queen was selected
+		    //Checks if the black queen was selected
 		    else if (buttonText == "BQueen")
 		    {
-			this.buttonCheck = this.buttonText; //sets buttoncheck variable to allow deselection
-			BQueen (i, j); //calls BQueen method, sends i and j as the position of the current piece
-			this.x = i; //records vertical grid position for use in movement
-			this.y = j; //records horizontal grid position for use in movement
+			this.buttonCheck = this.buttonText; //Sets buttoncheck variable to allow deselection
+			BQueen (i, j); //Calls BQueen method, sends i and j as the position of the current piece
+			this.x = i; //Records vertical grid position for use in movement
+			this.y = j; //Records horizontal grid position for use in movement
 		    }
 
-		    //checks if the black bishop was selected
+		    //Checks if the black bishop was selected
 		    else if (this.buttonText == "BBishop")
 		    {
-			this.buttonCheck = this.buttonText; //sets buttoncheck variable to allow deselection
-			BBishop (i, j); //calls BBishop method, sends i and j as the position of the current piece
-			BCollision (i, j); //calls BCollision method, sends i and j as the position of the current piece
-			this.x = i; //records vertical grid position for use in movement
-			this.y = j; //records horizontal grid position for use in movement
+			this.buttonCheck = this.buttonText; //Sets buttoncheck variable to allow deselection
+			BBishop (i, j); //Calls BBishop method, sends i and j as the position of the current piece
+			BCollision (i, j); //Calls BCollision method, sends i and j as the position of the current piece
+			this.x = i; //Records vertical grid position for use in movement
+			this.y = j; //Records horizontal grid position for use in movement
 		    }
 
-		    //checks if the black knight was selected
+		    //Checks if the black knight was selected
 		    else if (this.buttonText == "BKnight")
 		    {
-			this.buttonCheck = this.buttonText; //sets buttoncheck variable to allow deselection
-			//nested for loops disable all tiles on the board
+			this.buttonCheck = this.buttonText; //Sets buttoncheck variable to allow deselection
+
+			//Nested for loops disable all tiles on the board
 			for (int ii = 0 ; ii < 8 ; ii++)
 			{
 			    for (int jj = 0 ; jj < 8 ; jj++)
 			    {
-				this.tiles [ii] [jj].setEnabled (false); //disables the tiles
+				this.tiles [ii] [jj].setEnabled (false); //Disables the tiles
 			    }
 			}
-			BKnight (i, j); //calls BKnight method, sends i and j as the position of the current piece
-			this.x = i; //records vertical grid position for use in movement
-			this.y = j; //records horizontal grid position for use in movement
+			BKnight (i, j); //Calls BKnight method, sends i and j as the position of the current piece
+			this.x = i; //Records vertical grid position for use in movement
+			this.y = j; //Records horizontal grid position for use in movement
 		    }
 
-		    //checks if the black rook was selected
+		    //Checks if the black rook was selected
 		    else if (this.buttonText == "BRook")
 		    {
-			this.buttonCheck = this.buttonText; //sets buttoncheck variable to allow deselection
-			//nested for loops disable all tiles on the board
+			this.buttonCheck = this.buttonText; //Sets buttoncheck variable to allow deselection
+			//Nested for loops disable all tiles on the board
 			for (int ii = 0 ; ii < 8 ; ii++)
 			{
 			    for (int jj = 0 ; jj < 8 ; jj++)
 			    {
-				this.tiles [ii] [jj].setEnabled (false); //disables the tiles
+				this.tiles [ii] [jj].setEnabled (false); //Disables the tiles
 			    }
 			}
-			BRook (i, j); //calls BRook method, sends i and j as the position of the current piece
-			RCollision (i, j); //calls RCollision method, sends i and j as the position of the current piece
-			this.x = i; //records vertical grid position for use in movement
-			this.y = j; //records horizontal grid position for use in movement
+			BRook (i, j); //Calls BRook method, sends i and j as the position of the current piece
+			RCollision (i, j); //Calls RCollision method, sends i and j as the position of the current piece
+			this.x = i; //Records vertical grid position for use in movement
+			this.y = j; //Records horizontal grid position for use in movement
 		    }
 
-		    //checks if the black pawn was selected
+		    //Checks if the black pawn was selected
 		    else if (this.buttonText == "BPawn")
 		    {
-			this.buttonCheck = this.buttonText; //sets buttoncheck variable to allow deselection
-			BPawn (i, j); //calls BPawn method, sends i and j as the position of the current piece
-			this.x = i; //records vertical grid position for use in movement
-			this.y = j; //records horizontal grid position for use in movement
+			this.buttonCheck = this.buttonText; //Sets buttoncheck variable to allow deselection
+			BPawn (i, j); //Calls BPawn method, sends i and j as the position of the current piece
+			this.x = i; //Records vertical grid position for use in movement
+			this.y = j; //Records horizontal grid position for use in movement
 		    }
 
-		    //checks if the white king was selected
+		    //Checks if the white king was selected
 		    else if (this.buttonText == "WKing")
 		    {
-			this.buttonCheck = this.buttonText; //sets buttoncheck variable to allow deselection
-			WKing (i, j); //calls WKing method, sends i and j as the position of the current piece
-			this.x = i; //records vertical grid position for use in movement
-			this.y = j; //records horizontal grid position for use in movement
+			this.buttonCheck = this.buttonText; //Sets buttoncheck variable to allow deselection
+			WKing (i, j); //Calls WKing method, sends i and j as the position of the current piece
+			this.x = i; //Records vertical grid position for use in movement
+			this.y = j; //Records horizontal grid position for use in movement
 		    }
 
-		    //checks if the white queen was selected
+		    //Checks if the white queen was selected
 		    else if (this.buttonText == "WQueen")
 		    {
-			this.buttonCheck = this.buttonText; //sets buttoncheck variable to allow deselection
-			WQueen (i, j); //calls WQueen method, sends i and j as the position of the current piece
-			this.x = i; //records vertical grid position for use in movement
-			this.y = j; //records horizontal grid position for use in movement
+			this.buttonCheck = this.buttonText; //Sets buttoncheck variable to allow deselection
+			WQueen (i, j); //Calls WQueen method, sends i and j as the position of the current piece
+			this.x = i; //Records vertical grid position for use in movement
+			this.y = j; //Records horizontal grid position for use in movement
 		    }
 
-		    //checks if the white bishop was selected
+		    //Checks if the white bishop was selected
 		    else if (this.buttonText == "WBishop")
 		    {
-			this.buttonCheck = this.buttonText; //sets buttoncheck variable to allow deselection
-			WBishop (i, j); //calls WBishop method, sends i and j as the position of the current piece
-			BCollision (i, j); //calls BCollision method, sends i and j as the position of the current piece
-			this.x = i; //records vertical grid position for use in movement
-			this.y = j; //records horizontal grid position for use in movement
+			this.buttonCheck = this.buttonText; //Sets buttoncheck variable to allow deselection
+			WBishop (i, j); //Calls WBishop method, sends i and j as the position of the current piece
+			BCollision (i, j); //Calls BCollision method, sends i and j as the position of the current piece
+			this.x = i; //Records vertical grid position for use in movement
+			this.y = j; //Records horizontal grid position for use in movement
 		    }
 
-		    //checks if the white knight was selected
+		    //Checks if the white knight was selected
 		    else if (this.buttonText == "WKnight")
 		    {
-			this.buttonCheck = this.buttonText;  //sets buttoncheck variable to allow deselection
-			//nested for loops disable all tiles on the board
+			this.buttonCheck = this.buttonText;  //Sets buttoncheck variable to allow deselection
+			//Nested for loops disable all tiles on the board
 			for (int ii = 0 ; ii < 8 ; ii++)
 			{
 			    for (int jj = 0 ; jj < 8 ; jj++)
 			    {
-				this.tiles [ii] [jj].setEnabled (false); //disables the tiles
+				this.tiles [ii] [jj].setEnabled (false); //Disables the tiles
 			    }
 			}
 
-			WKnight (i, j); //calls WKnight method, sends i and j as the position of the current piece
-			this.x = i; //records vertical grid position for use in movement
-			this.y = j; //records horizontal grid position for use in movement
+			WKnight (i, j); //Calls WKnight method, sends i and j as the position of the current piece
+			this.x = i; //Records vertical grid position for use in movement
+			this.y = j; //Records horizontal grid position for use in movement
 		    }
 
-		    //checks if the white rook was selected
+		    //Checks if the white rook was selected
 		    else if (this.buttonText == "WRook")
 		    {
-			this.buttonCheck = this.buttonText; //sets buttoncheck variable to allow deselection
-			//nested for loops disable all tiles on the board
+			this.buttonCheck = this.buttonText; //Sets buttoncheck variable to allow deselection
+			//Nested for loops disable all tiles on the board
 			for (int ii = 0 ; ii < 8 ; ii++)
 			{
 			    for (int jj = 0 ; jj < 8 ; jj++)
 			    {
-				this.tiles [ii] [jj].setEnabled (false); //disables the tiles
+				this.tiles [ii] [jj].setEnabled (false); //Disables the tiles
 			    }
 			}
-			WRook (i, j); //calls WRook method, sends i and j as the position of the current piece
-			RCollision (i, j); //calls RCollision method, sends i and j as the position of the current piece
-			this.x = i; //records vertical grid position for use in movement
-			this.y = j; //records horizontal grid position for use in movement
+			WRook (i, j); //Calls WRook method, sends i and j as the position of the current piece
+			RCollision (i, j); //Calls RCollision method, sends i and j as the position of the current piece
+			this.x = i; //Records vertical grid position for use in movement
+			this.y = j; //Records horizontal grid position for use in movement
 		    }
 
-		    //checks if the white pawn was selected
+		    //Checks if the white pawn was selected
 		    else if (this.buttonText == "WPawn")
 		    {
-			buttonCheck = buttonText; //sets buttoncheck variable to allow deselection
-			this.WPawn (i, j); //calls WPawn method, sends i and j as the position of the current piece
-			this.x = i;  //records vertical grid position for use in movement
-			this.y = j;  //records horizontal grid position for use in movement
+			buttonCheck = buttonText; //Sets buttoncheck variable to allow deselection
+			this.WPawn (i, j); //Calls WPawn method, sends i and j as the position of the current piece
+			this.x = i; //Records vertical grid position for use in movement
+			this.y = j; //Records horizontal grid position for use in movement
 		    }
 
-		    //checks if a blank tile was selected, indicating moving a piece
+		    //Checks if a blank tile was selected, indicating moving a piece
 		    else if (this.buttonText == " ")
 		    {
-			Move (i, j, this.x, this.y); //calls move class, sends i and j as the tile to be moved to, x and y as the position to be moved from
-			Check (); //calls check method to see if either player is in check
-			this.turn++; //increases turn variable to an even number to indicate black team's turn
+			Move (i, j, this.x, this.y); //Calls move class, sends i and j as the tile to be moved to, x and y as the position to be moved from
+			Check (); //Calls check method to see if either player is in check
+			this.turn++; //Increases turn variable to an even number to indicate black team's turn
 
-			//nested for loops disable all tiles on the board
+			//Nested for loops disable all tiles on the board
 			for (int ii = 0 ; ii < 8 ; ii++)
 			{
 			    for (int jj = 0 ; jj < 8 ; jj++)
 			    {
-				this.tiles [ii] [jj].setEnabled (false); //disables the tiles
+				this.tiles [ii] [jj].setEnabled (false); //Disables the tiles
 			    }
 			}
 
-			//checks if it is the black team's turn
+			//Checks if it is the black team's turn
 			if (this.turn % 2 == 0)
 			{
-			    //nested for loops scan board for black pieces
+			    //Nested for loops scan board for black pieces
 			    for (int ii = 0 ; ii < 8 ; ii++)
 			    {
 				for (int jj = 0 ; jj < 8 ; jj++)
 				{
-				    //checks if tile is a black piece
+				    //Checks if tile is a black piece
 				    if (this.tiles [ii] [jj].getText ().charAt (0) == 'B')
 				    {
-					this.tiles [ii] [jj].setEnabled (true); //enables black pieces
+					this.tiles [ii] [jj].setEnabled (true); //Enables black pieces
 				    }
 				}
 			    }
 			}
 
-			//if it isn't black team's turn, it's white team's turn
+			//If it isn't black team's turn, it's white team's turn
 			else
 			{
-			    //nested for loops scan board for white tiles
+			    //Nested for loops scan board for white tiles
 			    for (int ii = 0 ; ii < 8 ; ii++)
 			    {
 				for (int jj = 0 ; jj < 8 ; jj++)
 				{
-				    //checks if tile is a white piece
+				    //Checks if tile is a white piece
 				    if (this.tiles [ii] [jj].getText ().charAt (0) == 'W')
 				    {
-					this.tiles [ii] [jj].setEnabled (true); //enables white pieces
+					this.tiles [ii] [jj].setEnabled (true); //Enables white pieces
 				    }
 				}
 			    }
 			}
-			boardcolour (); //recolors the board
+			boardcolour (); //Recolors the board
 		    }
 		}
 	    }
 	}
 
-	//nested for loops scan board for the king pieces
+	//Nested for loops scan board for the king pieces
 	for (int i = 0 ; i < 8 ; i++)
 	{
 	    for (int j = 0 ; j < 8 ; j++)
 	    {
-		//checks if tile is the black king
+		//Checks if tile is the black king
 		if (this.tiles [i] [j].getText () == "BKing")
 		{
-		    this.WhiteWin = false; //if black king is found, white team has not won yet
+		    this.WhiteWin = false; //If black king is found, white team has not won yet
 		}
 
-		//checks if tile is the white king
+		//Checks if tile is the white king
 		if (this.tiles [i] [j].getText () == "WKing")
 		{
-		    this.BlackWin = false; //if white king is found, black team has not won yet
+		    this.BlackWin = false; //If white king is found, black team has not won yet
 		}
 	    }
 	}
 
-	//checks if the white king was not found on the board, indicating it has been captured
+	//Checks if the white king was not found on the board, indicating it has been captured
 	if (this.BlackWin == true)
 	{
 	    //Checks vector vp2 for more elements
 	    while (this.p2name.hasMoreElements ())
 	    {
-		System.out.println (this.p2name.nextElement () + " Wins!"); //tells players who won
+		System.out.println (this.p2name.nextElement () + " Wins!"); //Tells players who won
 	    }
 
-	    try //pauses program for 2 second to allow players to read victory message
+	    try //Pauses program for 2 second to allow players to read victory message
 	    {
-		Thread.sleep (2000); //pause for 2000 milliseconds (2 seconds)
+		Thread.sleep (2000); //Pause for 2000 milliseconds (2 seconds)
 	    }
 
 	    catch (InterruptedException s)
 	    {
 	    }
-	    System.exit (0); //shuts down program
+	    System.exit (0); //Shuts down program
 	}
 
-	//checks if the black king was not found on the board, indicating it has been captured
+	//Checks if the black king was not found on the board, indicating it has been captured
 	if (this.WhiteWin == true)
 	{
-	    //check vector vp1 for more elements
+	    //Checks vector vp1 for more elements
 	    while (this.p1name.hasMoreElements ())
 	    {
-		System.out.println (this.p1name.nextElement () + " Wins!"); //tells players who won
+		System.out.println (this.p1name.nextElement () + " Wins!"); //Tells players who won
 	    }
 
-	    try //pauses program for 2 second to allow players to read victory message
+	    try //Pauses program for 2 second to allow players to read victory message
 	    {
-		Thread.sleep (2000); //pause for 2000 milliseconds (2 seconds)
+		Thread.sleep (2000); //Pause for 2000 milliseconds (2 seconds)
 	    }
 
 	    catch (InterruptedException s)
 	    {
 	    }
-	    System.exit (0); //shuts down program
+	    System.exit (0); //Shuts down program
 	}
     }
 
@@ -705,483 +706,483 @@ public class Chess extends JFrame implements ActionListener
     //
     //Method used to move the black king piece
     //
-    public void BKing (int x, int y)  //imports x and y as the position of the curent piece
+    public void BKing (int x, int y)  //Imports x and y as the position of the curent piece
     {
-	//nested for loops disable all tiles on the board
+	//Nested for loops disable all tiles on the board
 	for (int i = 0 ; i < 8 ; i++)
 	{
 	    for (int j = 0 ; j < 8 ; j++)
 	    {
-		this.tiles [i] [j].setEnabled (false); //disables the tiles
+		this.tiles [i] [j].setEnabled (false); //Disables the tiles
 	    }
 	}
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if (x < 7 && y < 7)
 	{
-	    this.tiles [x + 1] [y + 1].setEnabled (true);   //enables the tile down and to the right
+	    this.tiles [x + 1] [y + 1].setEnabled (true); //Enables the tile down and to the right
 
-	    //checks if the tile down and to the right is a teammate
+	    //Checks if the tile down and to the right is a teammate
 	    if (this.tiles [x + 1] [y + 1].getText ().charAt (0) == 'B')
 	    {
-		this.tiles [x + 1] [y + 1].setEnabled (false); //disables the tile
+		this.tiles [x + 1] [y + 1].setEnabled (false); //Disables the tile
 	    }
 
-	    //checks if the tile down and to the right is blank
+	    //Checks if the tile down and to the right is blank
 	    if (this.tiles [x + 1] [y + 1].getText () == " ")
 	    {
-		this.tiles [x + 1] [y + 1].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x + 1] [y + 1].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if the tile down and to the right is an enemy
+	    //Checks if the tile down and to the right is an enemy
 	    if (this.tiles [x + 1] [y + 1].getText ().charAt (0) == 'W')
 	    {
-		this.tiles [x + 1] [y + 1].setBackground (Color.orange); //colors tile orange to indicate a legal capture move
+		this.tiles [x + 1] [y + 1].setBackground (Color.orange); //Colors tile orange to indicate a legal capture move
 	    }
 	}
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if (x < 7 && y > 0)
 	{
-	    this.tiles [x + 1] [y - 1].setEnabled (true); //enables the tile down and to the left
+	    this.tiles [x + 1] [y - 1].setEnabled (true); //Enables the tile down and to the left
 
-	    //checks if the tile down and to the left is a teammate
+	    //Checks if the tile down and to the left is a teammate
 	    if (this.tiles [x + 1] [y - 1].getText ().charAt (0) == 'B')
 	    {
-		this.tiles [x + 1] [y - 1].setEnabled (false); //disables the tile
+		this.tiles [x + 1] [y - 1].setEnabled (false); //Disables the tile
 	    }
 
-	    //checks if the tile down and to the left is blank
+	    //Checks if the tile down and to the left is blank
 	    if (this.tiles [x + 1] [y - 1].getText () == " ")
 	    {
-		this.tiles [x + 1] [y - 1].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x + 1] [y - 1].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if the tile down and to the left is an enemy
+	    //Checks if the tile down and to the left is an enemy
 	    if (this.tiles [x + 1] [y - 1].getText ().charAt (0) == 'W')
 	    {
-		this.tiles [x + 1] [y - 1].setBackground (Color.orange); //colors tile orange to indicate a legal capture move
+		this.tiles [x + 1] [y - 1].setBackground (Color.orange); //Colors tile orange to indicate a legal capture move
 	    }
 	}
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if (x > 0 && y < 7)
 	{
-	    this.tiles [x - 1] [y + 1].setEnabled (true); //enables the tile up and to the right
+	    this.tiles [x - 1] [y + 1].setEnabled (true); //Enables the tile up and to the right
 
-	    //checks if the tile up and to the right is a teammate
+	    //Checks if the tile up and to the right is a teammate
 	    if (this.tiles [x - 1] [y + 1].getText ().charAt (0) == 'B')
 	    {
-		this.tiles [x - 1] [y + 1].setEnabled (false); //disables the tile
+		this.tiles [x - 1] [y + 1].setEnabled (false); //Disables the tile
 	    }
 
-	    //checks if the tile up and to the right is blank
+	    //Checks if the tile up and to the right is blank
 	    if (this.tiles [x - 1] [y + 1].getText () == " ")
 	    {
-		this.tiles [x - 1] [y + 1].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x - 1] [y + 1].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if the tile up and to the right is an enemy
+	    //Checks if the tile up and to the right is an enemy
 	    if (this.tiles [x - 1] [y + 1].getText ().charAt (0) == 'W')
 	    {
-		this.tiles [x - 1] [y + 1].setBackground (Color.orange); //colors tile orange to indicate a legal capture move
+		this.tiles [x - 1] [y + 1].setBackground (Color.orange); //Colors tile orange to indicate a legal capture move
 	    }
 	}
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if (x > 0 && y > 0)
 	{
-	    this.tiles [x - 1] [y - 1].setEnabled (true); //enables the tile up and to the left
+	    this.tiles [x - 1] [y - 1].setEnabled (true); //Enables the tile up and to the left
 
-	    //checks if the tile down and to the left is a teammate
+	    //Checks if the tile down and to the left is a teammate
 	    if (this.tiles [x - 1] [y - 1].getText ().charAt (0) == 'B')
 	    {
-		this.tiles [x - 1] [y - 1].setEnabled (false); //disables the tile
+		this.tiles [x - 1] [y - 1].setEnabled (false); //Disables the tile
 	    }
 
-	    //checks if the tile down and to the left is blank
+	    //Checks if the tile down and to the left is blank
 	    if (this.tiles [x - 1] [y - 1].getText () == " ")
 	    {
-		this.tiles [x - 1] [y - 1].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x - 1] [y - 1].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if the tile down and to the left is an enemy
+	    //Checks if the tile down and to the left is an enemy
 	    if (this.tiles [x - 1] [y - 1].getText ().charAt (0) == 'W')
 	    {
-		this.tiles [x - 1] [y - 1].setBackground (Color.orange); //colors tile orange to indicate a legal capture move
+		this.tiles [x - 1] [y - 1].setBackground (Color.orange); //Colors tile orange to indicate a legal capture move
 	    }
 	}
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if (x < 7)
 	{
-	    this.tiles [x + 1] [y].setEnabled (true); //enables the tile down from current position
+	    this.tiles [x + 1] [y].setEnabled (true); //Enables the tile down from current position
 
-	    //checks if the tile down from current position is a teammate
+	    //Checks if the tile down from current position is a teammate
 	    if (this.tiles [x + 1] [y].getText ().charAt (0) == 'B')
 	    {
-		this.tiles [x + 1] [y].setEnabled (false); //disables the tile
+		this.tiles [x + 1] [y].setEnabled (false); //Disables the tile
 	    }
 
-	    //checks if the tile down from current position is blank
+	    //Checks if the tile down from current position is blank
 	    if (this.tiles [x + 1] [y].getText () == " ")
 	    {
-		this.tiles [x + 1] [y].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x + 1] [y].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if the tile down from current position is an enemy
+	    //Checks if the tile down from current position is an enemy
 	    if (this.tiles [x + 1] [y].getText ().charAt (0) == 'W')
 	    {
-		this.tiles [x + 1] [y].setBackground (Color.orange); //colors tile orange to indicate a legal capture move
+		this.tiles [x + 1] [y].setBackground (Color.orange); //Colors tile orange to indicate a legal capture move
 	    }
 	}
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if (x > 0)
 	{
-	    this.tiles [x - 1] [y].setEnabled (true); //enables the tile up from current position
+	    this.tiles [x - 1] [y].setEnabled (true); //Enables the tile up from current position
 
-	    //checks if the tile up from current position is a teammate
+	    //Checks if the tile up from current position is a teammate
 	    if (this.tiles [x - 1] [y].getText ().charAt (0) == 'B')
 	    {
-		this.tiles [x - 1] [y].setEnabled (false); //disables the tile
+		this.tiles [x - 1] [y].setEnabled (false); //Disables the tile
 	    }
 
-	    //checks if the tile up from current position is blank
+	    //Checks if the tile up from current position is blank
 	    if (this.tiles [x - 1] [y].getText () == " ")
 	    {
-		this.tiles [x - 1] [y].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x - 1] [y].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if the tile up from current position is an enemy
+	    //Checks if the tile up from current position is an enemy
 	    if (this.tiles [x - 1] [y].getText ().charAt (0) == 'W')
 	    {
-		this.tiles [x - 1] [y].setBackground (Color.orange); //colors tile orange to indicate a legal capture move
+		this.tiles [x - 1] [y].setBackground (Color.orange); //Colors tile orange to indicate a legal capture move
 	    }
 	}
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if (y < 7)
 	{
-	    this.tiles [x] [y + 1].setEnabled (true); //enables the tile to the right of current position
+	    this.tiles [x] [y + 1].setEnabled (true); //Enables the tile to the right of current position
 
-	    //checks if the tile to the right of current position is a teammate
+	    //Checks if the tile to the right of current position is a teammate
 	    if (this.tiles [x] [y + 1].getText ().charAt (0) == 'B')
 	    {
-		this.tiles [x] [y + 1].setEnabled (false); //disables the tile
+		this.tiles [x] [y + 1].setEnabled (false); //Disables the tile
 	    }
 
-	    //checks if the tile to the right of current position is blank
+	    //Checks if the tile to the right of current position is blank
 	    if (this.tiles [x] [y + 1].getText () == " ")
 	    {
-		this.tiles [x] [y + 1].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x] [y + 1].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if the tile to the right of current position is an enemy
+	    //Checks if the tile to the right of current position is an enemy
 	    if (this.tiles [x] [y + 1].getText ().charAt (0) == 'W')
 	    {
-		this.tiles [x] [y + 1].setBackground (Color.orange); //colors tile orange to indicate a legal capture move
+		this.tiles [x] [y + 1].setBackground (Color.orange); //Colors tile orange to indicate a legal capture move
 	    }
 	}
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if (y > 0)
 	{
-	    this.tiles [x] [y - 1].setEnabled (true); //enables the tile to the left of current position
+	    this.tiles [x] [y - 1].setEnabled (true); //Enables the tile to the left of current position
 
-	    //checks if the tile to the right of current position is a teammate
+	    //Checks if the tile to the right of current position is a teammate
 	    if (this.tiles [x] [y - 1].getText ().charAt (0) == 'B')
 	    {
-		this.tiles [x] [y - 1].setEnabled (false); //disables the tile
+		this.tiles [x] [y - 1].setEnabled (false); //Disables the tile
 	    }
 
-	    //checks if the tile to the right of current position is blank
+	    //Checks if the tile to the right of current position is blank
 	    if (this.tiles [x] [y - 1].getText () == " ")
 	    {
-		this.tiles [x] [y - 1].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x] [y - 1].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if the tile to the right of current position is an enemy
+	    //Checks if the tile to the right of current position is an enemy
 	    if (this.tiles [x] [y - 1].getText ().charAt (0) == 'W')
 	    {
-		this.tiles [x] [y - 1].setBackground (Color.orange); //colors tile orange to indicate a legal capture move
+		this.tiles [x] [y - 1].setBackground (Color.orange); //Colors tile orange to indicate a legal capture move
 	    }
 	}
-	this.tiles [x] [y].setEnabled (true); //enables tile at current position
+	this.tiles [x] [y].setEnabled (true); //Enables tile at current position
     }
 
 
     //
     //Method used to move the black queen piece
     //
-    public void BQueen (int x, int y)  //imports x and y as position of current piece
+    public void BQueen (int x, int y)  //Imports x and y as position of current piece
     {
-	BBishop (x, y); //calls BBishop method, sending x and y as position of current piece
-	BRook (x, y); //calls BRook method, sending x and y as position of current piece
-	QCollision (x, y); //calls QCollision method, sending x and y as position of current piece
+	BBishop (x, y); //Calls BBishop method, sending x and y as position of current piece
+	BRook (x, y); //Calls BRook method, sending x and y as position of current piece
+	QCollision (x, y); //Calls QCollision method, sending x and y as position of current piece
     }
 
 
     //
     //Method used to move the black bishop piece
     //
-    public void BBishop (int x, int y)  //imports x and y as position of current piece
+    public void BBishop (int x, int y)  //Imports x and y as position of current piece
     {
-	//nested for loops disable all tiles on the board
+	//Nested for loops disable all tiles on the board
 	for (int i = 0 ; i < 8 ; i++)
 	{
 	    for (int j = 0 ; j < 8 ; j++)
 	    {
-		this.tiles [i] [j].setEnabled (false); //disables the tiles
+		this.tiles [i] [j].setEnabled (false); //Disables the tiles
 	    }
 	}
 
-	//for loop enables all tiles down and to the right
+	//For loop enables all tiles down and to the right
 	for (int i = 0 ; i < 8 ; i++)
 	{
-	    this.tiles [x + i] [y + i].setEnabled (true); //enables the tiles
+	    this.tiles [x + i] [y + i].setEnabled (true); //Enables the tiles
 
-	    //if statement prevents out of bounds exceptions from tripping
+	    //If statement prevents out of bounds exceptions from tripping
 	    if ((x + i) == 7 || (y + i) == 7)
 	    {
-		break; //breeaks loop before it goes out of bounds
+		break; //Breaks loop before it goes out of bounds
 	    }
 	}
 
-	//for loop enables all tiles down and to the left
+	//For loop enables all tiles down and to the left
 	for (int i = 0 ; i < 8 ; i++)
 	{
-	    this.tiles [x + i] [y - i].setEnabled (true); //enables the tiles
+	    this.tiles [x + i] [y - i].setEnabled (true); //Enables the tiles
 
-	    //if statement prevents out of bounds exceptions from tripping
+	    //If statement prevents out of bounds exceptions from tripping
 	    if ((x + i) == 7 || (y - i) == 0)
 	    {
-		break; //breeaks loop before it goes out of bounds
+		break; //Breaks loop before it goes out of bounds
 	    }
 	}
 
-	//for loop enables all tiles up and to the right
+	//For loop enables all tiles up and to the right
 	for (int i = 0 ; i < 8 ; i++)
 	{
-	    this.tiles [x - i] [y + i].setEnabled (true); //enables the tiles
+	    this.tiles [x - i] [y + i].setEnabled (true); //Enables the tiles
 
-	    //if statement prevents out of bounds exceptions from tripping
+	    //If statement prevents out of bounds exceptions from tripping
 	    if ((x - i) == 0 || (y + i) == 7)
 	    {
-		break; //breeaks loop before it goes out of bounds
+		break; //Breaks loop before it goes out of bounds
 	    }
 	}
 
-	//for loop enables all tiles up and to the right
+	//For loop enables all tiles up and to the right
 	for (int i = 0 ; i < 8 ; i++)
 	{
-	    this.tiles [x - i] [y - i].setEnabled (true); //enables the tiles
+	    this.tiles [x - i] [y - i].setEnabled (true); //Enables the tiles
 
-	    //if statement prevents out of bounds exceptions from tripping
+	    //If statement prevents out of bounds exceptions from tripping
 	    if ((x - i) == 0 || (y - i) == 0)
 	    {
-		break; //breeaks loop before it goes out of bounds
+		break; //Breaks loop before it goes out of bounds
 	    }
 	}
-	this.tiles [x] [y].setEnabled (true); //enables tile at current position
+	this.tiles [x] [y].setEnabled (true); //Enables tile at current position
     }
 
 
     //
     //Method used to move the black knight piece
     //
-    public void BKnight (int x, int y)  //imports x and y as position of current piece
+    public void BKnight (int x, int y)  //Imports x and y as position of current piece
     {
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if ((x + 2) < 8 && (y + 1) < 8)
 	{
-	    this.tiles [x + 2] [y + 1].setEnabled (true); //enables tile at move point
+	    this.tiles [x + 2] [y + 1].setEnabled (true); //Enables tile at move point
 
-	    //checks if tile at move point is a teammate
+	    //Checks if tile at move point is a teammate
 	    if (this.tiles [x + 2] [y + 1].getText ().charAt (0) == 'B')
 	    {
-		this.tiles [x + 2] [y + 1].setEnabled (false); //disables the tile
+		this.tiles [x + 2] [y + 1].setEnabled (false); //Disables the tile
 	    }
 
-	    //checks if tile at move point is blank
+	    //Checks if tile at move point is blank
 	    if (this.tiles [x + 2] [y + 1].getText () == " ")
 	    {
-		this.tiles [x + 2] [y + 1].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x + 2] [y + 1].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if tile at move point is an enemy
+	    //Checks if tile at move point is an enemy
 	    if (this.tiles [x + 2] [y + 1].getText ().charAt (0) == 'W')
 	    {
-		this.tiles [x + 2] [y + 1].setBackground (Color.orange); //colors tile orange to indicate a legal capture move
+		this.tiles [x + 2] [y + 1].setBackground (Color.orange); //Colors tile orange to indicate a legal capture move
 	    }
 	}
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if ((x + 2) < 8 && (y - 1) >= 0)
 	{
-	    this.tiles [x + 2] [y - 1].setEnabled (true); //enables tile at move point
+	    this.tiles [x + 2] [y - 1].setEnabled (true); //Enables tile at move point
 
-	    //checks if tile at move point is a teammate
+	    //Checks if tile at move point is a teammate
 	    if (this.tiles [x + 2] [y - 1].getText ().charAt (0) == 'B')
 	    {
-		this.tiles [x + 2] [y - 1].setEnabled (false); //disables the tile
+		this.tiles [x + 2] [y - 1].setEnabled (false); //Disables the tile
 	    }
 
-	    //checks if tile at move point is blank
+	    //Checks if tile at move point is blank
 	    if (this.tiles [x + 2] [y - 1].getText () == " ")
 	    {
-		this.tiles [x + 2] [y - 1].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x + 2] [y - 1].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if tile at move point is an enemy
+	    //Checks if tile at move point is an enemy
 	    if (this.tiles [x + 2] [y - 1].getText ().charAt (0) == 'W')
 	    {
-		this.tiles [x + 2] [y - 1].setBackground (Color.orange); //colors tile orange to indicate a legal capture move
+		this.tiles [x + 2] [y - 1].setBackground (Color.orange); //Colors tile orange to indicate a legal capture move
 	    }
 	}
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if ((x - 2) >= 0 && (y + 1) < 8)
 	{
-	    this.tiles [x - 2] [y + 1].setEnabled (true); //enables tile at move point
+	    this.tiles [x - 2] [y + 1].setEnabled (true); //Enables tile at move point
 
-	    //checks if tile at move point is a teammate
+	    //Checks if tile at move point is a teammate
 	    if (this.tiles [x - 2] [y + 1].getText ().charAt (0) == 'B')
 	    {
-		this.tiles [x - 2] [y + 1].setEnabled (false); //disables the tile
+		this.tiles [x - 2] [y + 1].setEnabled (false); //Disables the tile
 	    }
 
-	    //checks if tile at move point is blank
+	    //Checks if tile at move point is blank
 	    if (this.tiles [x - 2] [y + 1].getText () == " ")
 	    {
-		this.tiles [x - 2] [y + 1].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x - 2] [y + 1].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if tile at move point is an enemy
+	    //Checks if tile at move point is an enemy
 	    if (this.tiles [x - 2] [y + 1].getText ().charAt (0) == 'W')
 	    {
-		this.tiles [x - 2] [y + 1].setBackground (Color.orange); //colors tile orange to indicate a legal capture move
+		this.tiles [x - 2] [y + 1].setBackground (Color.orange); //Colors tile orange to indicate a legal capture move
 	    }
 	}
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if ((x - 2) >= 0 && (y - 1) >= 0)
 	{
-	    this.tiles [x - 2] [y - 1].setEnabled (true); //enables tile at move point
+	    this.tiles [x - 2] [y - 1].setEnabled (true); //Enables tile at move point
 
-	    //checks if tile at move point is a teammate
+	    //Checks if tile at move point is a teammate
 	    if (this.tiles [x - 2] [y - 1].getText ().charAt (0) == 'B')
 	    {
-		this.tiles [x - 2] [y - 1].setEnabled (false); //disables the tile
+		this.tiles [x - 2] [y - 1].setEnabled (false); //Disables the tile
 	    }
 
-	    //checks if tile at move point is blank
+	    //Checks if tile at move point is blank
 	    if (this.tiles [x - 2] [y - 1].getText () == " ")
 	    {
-		this.tiles [x - 2] [y - 1].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x - 2] [y - 1].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if tile at move point is an enemy
+	    //Checks if tile at move point is an enemy
 	    if (this.tiles [x - 2] [y - 1].getText ().charAt (0) == 'W')
 	    {
-		this.tiles [x - 2] [y - 1].setBackground (Color.orange); //colors tile orange to indicate a legal capture move
+		this.tiles [x - 2] [y - 1].setBackground (Color.orange); //Colors tile orange to indicate a legal capture move
 	    }
 	}
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if ((x + 1) < 8 && (y + 2) < 8)
 	{
-	    this.tiles [x + 1] [y + 2].setEnabled (true); //enables tile at move point
+	    this.tiles [x + 1] [y + 2].setEnabled (true); //Enables tile at move point
 
-	    //checks if tile at move point is a teammate
+	    //Checks if tile at move point is a teammate
 	    if (this.tiles [x + 1] [y + 2].getText ().charAt (0) == 'B')
 	    {
-		this.tiles [x + 1] [y + 2].setEnabled (false); //disables the tile
+		this.tiles [x + 1] [y + 2].setEnabled (false); //Disables the tile
 	    }
 
-	    //checks if tile at move point is blank
+	    //Checks if tile at move point is blank
 	    if (this.tiles [x + 1] [y + 2].getText () == " ")
 	    {
-		this.tiles [x + 1] [y + 2].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x + 1] [y + 2].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if tile at move point is an enemy
+	    //Checks if tile at move point is an enemy
 	    if (this.tiles [x + 1] [y + 2].getText ().charAt (0) == 'W')
 	    {
-		this.tiles [x + 1] [y + 2].setBackground (Color.orange); //colors tile orange to indicate a legal capture move
+		this.tiles [x + 1] [y + 2].setBackground (Color.orange); //Colors tile orange to indicate a legal capture move
 	    }
 	}
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if ((x + 1) < 8 && (y - 2) >= 0)
 	{
-	    this.tiles [x + 1] [y - 2].setEnabled (true); //enables tile at move point
+	    this.tiles [x + 1] [y - 2].setEnabled (true); //Enables tile at move point
 
-	    //checks if tile at move point is a teammate
+	    //Checks if tile at move point is a teammate
 	    if (this.tiles [x + 1] [y - 2].getText ().charAt (0) == 'B')
 	    {
-		this.tiles [x + 1] [y - 2].setEnabled (false); //disables the tile
+		this.tiles [x + 1] [y - 2].setEnabled (false); //Disables the tile
 	    }
 
-	    //checks if tile at move point is blank
+	    //Checks if tile at move point is blank
 	    if (this.tiles [x + 1] [y - 2].getText () == " ")
 	    {
-		this.tiles [x + 1] [y - 2].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x + 1] [y - 2].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if tile at move point is an enemy
+	    //Checks if tile at move point is an enemy
 	    if (this.tiles [x + 1] [y - 2].getText ().charAt (0) == 'W')
 	    {
-		this.tiles [x + 1] [y - 2].setBackground (Color.orange); //colors tile orange to indicate a legal capture move
+		this.tiles [x + 1] [y - 2].setBackground (Color.orange); //Colors tile orange to indicate a legal capture move
 	    }
 	}
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if ((x - 1) >= 0 && (y + 2) < 8)
 	{
-	    this.tiles [x - 1] [y + 2].setEnabled (true); //enables tile at move point
+	    this.tiles [x - 1] [y + 2].setEnabled (true); //Enables tile at move point
 
-	    //checks if tile at move point is a teammate
+	    //Checks if tile at move point is a teammate
 	    if (this.tiles [x - 1] [y + 2].getText ().charAt (0) == 'B')
 	    {
-		this.tiles [x - 1] [y + 2].setEnabled (false); //disables the tile
+		this.tiles [x - 1] [y + 2].setEnabled (false); //Disables the tile
 	    }
 
-	    //checks if tile at move point is blank
+	    //Checks if tile at move point is blank
 	    if (this.tiles [x - 1] [y + 2].getText () == " ")
 	    {
-		this.tiles [x - 1] [y + 2].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x - 1] [y + 2].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if tile at move point is an enemy
+	    //Checks if tile at move point is an enemy
 	    if (this.tiles [x - 1] [y + 2].getText ().charAt (0) == 'W')
 	    {
-		this.tiles [x - 1] [y + 2].setBackground (Color.orange); //colors tile orange to indicate a legal capture move
+		this.tiles [x - 1] [y + 2].setBackground (Color.orange); //Colors tile orange to indicate a legal capture move
 	    }
 	}
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if ((x - 1) >= 0 && (y - 2) >= 0)
 	{
-	    this.tiles [x - 1] [y - 2].setEnabled (true); //enables tile at move point
+	    this.tiles [x - 1] [y - 2].setEnabled (true); //Enables tile at move point
 
-	    //checks if tile at move point is a teammate
+	    //Checks if tile at move point is a teammate
 	    if (this.tiles [x - 1] [y - 2].getText ().charAt (0) == 'B')
 	    {
-		this.tiles [x - 1] [y - 2].setEnabled (false); //disables the tile
+		this.tiles [x - 1] [y - 2].setEnabled (false); //Disables the tile
 	    }
 
-	    //checks if tile at move point is blank
+	    //Checks if tile at move point is blank
 	    if (this.tiles [x - 1] [y - 2].getText () == " ")
 	    {
-		this.tiles [x - 1] [y - 2].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x - 1] [y - 2].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if tile at move point is an enemy
+	    //Checks if tile at move point is an enemy
 	    if (this.tiles [x + 1] [y - 2].getText ().charAt (0) == 'W')
 	    {
-		this.tiles [x + 1] [y - 2].setBackground (Color.orange); //colors tile orange to indicate a legal capture move
+		this.tiles [x + 1] [y - 2].setBackground (Color.orange); //Colors tile orange to indicate a legal capture move
 	    }
 	}
 	this.tiles [x] [y].setEnabled (true); //enables tile at current position
@@ -1191,56 +1192,56 @@ public class Chess extends JFrame implements ActionListener
     //
     //Method used to move the black rook piece
     //
-    public void BRook (int x, int y)  //imports x and y as position of current piece
+    public void BRook (int x, int y)  //Imports x and y as position of current piece
     {
-	//for loop enables all tiles down from current position
+	//For loop enables all tiles down from current position
 	for (int i = 0 ; i < 8 ; i++)
 	{
-	    this.tiles [x + i] [y].setEnabled (true); //enables tiles
+	    this.tiles [x + i] [y].setEnabled (true); //Enables tiles
 
-	    //if statement prevents out of bounds exceptions from tripping
+	    //If statement prevents out of bounds exceptions from tripping
 	    if ((x + i) == 7)
 	    {
-		break; //breeaks loop before it goes out of bounds
+		break; //Breaks loop before it goes out of bounds
 	    }
 	}
 
-	//for loop enables all tiles up from current position
+	//For loop enables all tiles up from current position
 	for (int i = 0 ; i < 8 ; i++)
 	{
-	    this.tiles [x - i] [y].setEnabled (true); //enables tiles
+	    this.tiles [x - i] [y].setEnabled (true); //Enables tiles
 
-	    //if statement prevents out of bounds exceptions from tripping
+	    //If statement prevents out of bounds exceptions from tripping
 	    if ((x - i) == 0)
 	    {
-		break; //breeaks loop before it goes out of bounds
+		break; //Breaks loop before it goes out of bounds
 	    }
 	}
 
-	//for loop enables all tiles to the right of current position
+	//For loop enables all tiles to the right of current position
 	for (int i = 0 ; i < 8 ; i++)
 	{
-	    this.tiles [x] [y + i].setEnabled (true); //enables tiles
+	    this.tiles [x] [y + i].setEnabled (true); //Enables tiles
 
-	    //if statement prevents out of bounds exceptions from tripping
+	    //If statement prevents out of bounds exceptions from tripping
 	    if ((y + i) == 7)
 	    {
-		break; //breeaks loop before it goes out of bounds
+		break; //Breaks loop before it goes out of bounds
 	    }
 	}
 
-	//for loop enables all tiles to the left of current position
+	//For loop enables all tiles to the left of current position
 	for (int i = 0 ; i < 8 ; i++)
 	{
-	    this.tiles [x] [y - i].setEnabled (true); //enables tiles
+	    this.tiles [x] [y - i].setEnabled (true); //Enables tiles
 
-	    //if statement prevents out of bounds exceptions from tripping
+	    //If statement prevents out of bounds exceptions from tripping
 	    if ((y - i) == 0)
 	    {
-		break; //breeaks loop before it goes out of bounds
+		break; //Breaks loop before it goes out of bounds
 	    }
 	}
-	this.tiles [x] [y].setEnabled (true); //enables tile at current position
+	this.tiles [x] [y].setEnabled (true); //Enables tile at current position
     }
 
 
@@ -1828,13 +1829,13 @@ public class Chess extends JFrame implements ActionListener
     //
     //Method used to move the white rook piece
     //
-    public void WRook (int x, int y)  //imports x and y as position of current piece
+    public void WRook (int x, int y)  //Imports x and y as position of current piece
     {
 	for (int i = 0 ; i < 8 ; i++)
 	{
-	    this.tiles [x + i] [y].setEnabled (true); //enables tile at move point
+	    this.tiles [x + i] [y].setEnabled (true); //Enables tile at move point
 
-	    //if statement prevents out of bounds exceptions from tripping
+	    //If statement prevents out of bounds exceptions from tripping
 	    if ((x + i) == 7)
 	    {
 		break;
@@ -1843,9 +1844,9 @@ public class Chess extends JFrame implements ActionListener
 
 	for (int i = 0 ; i < 8 ; i++)
 	{
-	    this.tiles [x - i] [y].setEnabled (true); //enables tile at move point
+	    this.tiles [x - i] [y].setEnabled (true); //Enables tile at move point
 
-	    //if statement prevents out of bounds exceptions from tripping
+	    //If statement prevents out of bounds exceptions from tripping
 	    if ((x - i) == 0)
 	    {
 		break;  //Breaks to ensure value is not negative
@@ -1854,9 +1855,9 @@ public class Chess extends JFrame implements ActionListener
 
 	for (int i = 0 ; i < 8 ; i++)
 	{
-	    this.tiles [x] [y + i].setEnabled (true); //enables tile at move point
+	    this.tiles [x] [y + i].setEnabled (true); //Enables tile at move point
 
-	    //if statement prevents out of bounds exceptions from tripping
+	    //If statement prevents out of bounds exceptions from tripping
 	    if ((y + i) == 7)
 	    {
 		break;
@@ -1865,62 +1866,62 @@ public class Chess extends JFrame implements ActionListener
 
 	for (int i = 0 ; i < 8 ; i++)
 	{
-	    this.tiles [x] [y - i].setEnabled (true); //enables tile at move point
+	    this.tiles [x] [y - i].setEnabled (true); //Enables tile at move point
 
-	    //if statement prevents out of bounds exceptions from tripping
+	    //If statement prevents out of bounds exceptions from tripping
 	    if ((y - i) == 0)
 	    {
 		break;  //Breaks to ensure value is not negative
 	    }
 	}
-	this.tiles [x] [y].setEnabled (true); //enables tile at move point
+	this.tiles [x] [y].setEnabled (true); //Enables tile at move point
     }
 
 
     //
     //Method used to move the white pawn piece
     //
-    public void WPawn (int x, int y)  //imports x and y as position of current piece
+    public void WPawn (int x, int y)  //Imports x and y as position of current piece
     {
-	//nested for loops disable all tiles on the board
+	//Nested for loops disable all tiles on the board
 	for (int i = 0 ; i < 8 ; i++)
 	{
 	    for (int j = 0 ; j < 8 ; j++)
 	    {
-		this.tiles [i] [j].setEnabled (false); //disables the tiles
+		this.tiles [i] [j].setEnabled (false); //Disables the tiles
 	    }
 	}
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if (x == 6)
 	{
-	    this.tiles [x - 2] [y].setEnabled (true); //enables tile at move point
+	    this.tiles [x - 2] [y].setEnabled (true); //Enables tile at move point
 
-	    //checks if tile at move point is blank
+	    //Checks if tile at move point is blank
 	    if (this.tiles [x - 2] [y].getText () == " ")
 	    {
-		this.tiles [x - 2] [y].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x - 2] [y].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if tile at move point is blank
+	    //Checks if tile at move point is blank
 	    if (tiles [x - 2] [y].getText ().charAt (0) != ' ')
 	    {
-		this.tiles [x - 2] [y].setEnabled (false); //disables the tiles at move point
+		this.tiles [x - 2] [y].setEnabled (false); //Disables the tiles at move point
 	    }
 
 	    this.tiles [x - 1] [y].setEnabled (true);
 
-	    //checks if tile at move point is blank
+	    //Checks if tile at move point is blank
 	    if (this.tiles [x - 1] [y].getText () == " ")
 	    {
-		this.tiles [x - 1] [y].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x - 1] [y].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if tile at move point is blank
+	    //Checks if tile at move point is blank
 	    if (tiles [x - 1] [y].getText ().charAt (0) != ' ')
 	    {
-		this.tiles [x - 1] [y].setEnabled (false); //disables the tiles at move point
-		this.tiles [x - 2] [y].setEnabled (false); //disables the tiles at move point
+		this.tiles [x - 1] [y].setEnabled (false); //Disables the tiles at move point
+		this.tiles [x - 2] [y].setEnabled (false); //Disables the tiles at move point
 	    }
 	}
 
@@ -1928,53 +1929,53 @@ public class Chess extends JFrame implements ActionListener
 	{
 	    this.tiles [x - 1] [y].setEnabled (true); //enables tile at move point
 
-	    //checks if tile at move point is blank
+	    //Checks if tile at move point is blank
 	    if (this.tiles [x - 1] [y].getText () == " ")
 	    {
-		this.tiles [x - 1] [y].setBackground (Color.yellow); //colors tile yellow to indicate a legal move
+		this.tiles [x - 1] [y].setBackground (Color.yellow); //Colors tile yellow to indicate a legal move
 	    }
 
-	    //checks if tile at move point is blank
+	    //Checks if tile at move point is blank
 	    if (tiles [x - 1] [y].getText ().charAt (0) != ' ')
 	    {
-		this.tiles [x - 1] [y].setEnabled (false); //disables the tiles at move point
+		this.tiles [x - 1] [y].setEnabled (false); //Disables the tiles at move point
 	    }
 	}
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if ((y - 1) > -1)
 	{
-	    //checks if tile at move point is black
+	    //Checks if tile at move point is black
 	    if (this.tiles [x - 1] [y - 1].getText ().charAt (0) == 'B')
 	    {
-		this.tiles [x - 1] [y - 1].setEnabled (true); //enables tile at move point
-		this.tiles [x - 1] [y - 1].setBackground (Color.orange); //colors tile orange to indicate a legal capture move
+		this.tiles [x - 1] [y - 1].setEnabled (true); //Enables tile at move point
+		this.tiles [x - 1] [y - 1].setBackground (Color.orange); //Colors tile orange to indicate a legal capture move
 	    }
 	}
 
-	//if statement prevents out of bounds exceptions from tripping
+	//If statement prevents out of bounds exceptions from tripping
 	if ((y + 1) < 8)
 	{
-	    //checks if tile at move point is black
+	    //Checks if tile at move point is black
 	    if (this.tiles [x - 1] [y + 1].getText ().charAt (0) == 'B')
 	    {
-		this.tiles [x - 1] [y + 1].setEnabled (true); //enables tile at move point
-		this.tiles [x - 1] [y + 1].setBackground (Color.orange); //colors tile orange to indicate a legal capture move
+		this.tiles [x - 1] [y + 1].setEnabled (true); //Enables tile at move point
+		this.tiles [x - 1] [y + 1].setBackground (Color.orange); //Colors tile orange to indicate a legal capture move
 	    }
 	}
-	//checks if tile at move point is black
+	//Checks if tile at move point is black
 	if (this.tiles [x - 1] [y].getText ().charAt (0) == 'B')
 	{
-	    this.tiles [x - 1] [y].setEnabled (false); //disables the tiles at move point
+	    this.tiles [x - 1] [y].setEnabled (false); //Disables the tiles at move point
 	}
-	this.tiles [x] [y].setEnabled (true); //enables tile at move point
+	this.tiles [x] [y].setEnabled (true); //Enables tile at move point
     }
 
 
     //
     //Method used to detect collisions for the Rook piece
     //
-    public void RCollision (int x, int y)   //imports x and y as the position of the rook selected
+    public void RCollision (int x, int y)   //Imports x and y as the position of the rook selected
     {
 	if (this.tiles [x] [y].getBackground () == Color.CYAN) //Checks if the color of the current tile is cyan, for later recoloring
 	{
@@ -1997,47 +1998,47 @@ public class Chess extends JFrame implements ActionListener
 	    this.ColourCheck = "BLACK"; //Records the tile color so it can be recolored later
 	}
 
-	//for loop checks for collisions going down from the current position
+	//For loop checks for collisions going down from the current position
 	for (int i = 1 ; i < 8 ; i++)
 	{
-	    //if statement makes sure not out of bounds statements are tripped
+	    //If statement makes sure not out of bounds statements are tripped
 	    if ((x + i) < 8)
 	    {
-		//checks if the tile is not blank
+		//Checks if the tile is not blank
 		if (this.tiles [x + i] [y].getText ().charAt (0) != ' ')
 		{
-		    //for loop disables the colliding tile and everything past it
+		    //For loop disables the colliding tile and everything past it
 		    for (int ii = i ; ii < 8 ; ii++)
 		    {
-			this.tiles [x + ii] [y].setEnabled (false); //disables the tiles
+			this.tiles [x + ii] [y].setEnabled (false); //Disables the tiles
 
-			//if statement makes sure not out of bounds statements are tripped
+			//If statement makes sure not out of bounds statements are tripped
 			if (x + ii == 7)
 			{
-			    break; //breaks the loop before it goes out of bounds
+			    break; //Breaks the loop before it goes out of bounds
 			}
 		    }
 
-		    //checks if it's the white team's turn
+		    //Checks if it's the white team's turn
 		    if (this.turn % 2 != 0)
 		    {
-			//checks if the collided tile is an enemy piece
+			//Checks if the collided tile is an enemy piece
 			if (this.tiles [x + i] [y].getText ().charAt (0) == 'B')
 			{
 			    this.tiles [x + i] [y].setEnabled (true); //Re-enables the tile
-			    this.tiles [x + i] [y].setBackground (Color.orange); //sets the enemy's tile to orange to indicate it can be captured
+			    this.tiles [x + i] [y].setBackground (Color.orange); //Sets the enemy's tile to orange to indicate it can be captured
 			    break;
 			}
 		    }
 
-		    //checks if it's the black team's turn
+		    //Checks if it's the black team's turn
 		    else if (this.turn % 2 == 0)
 		    {
-			//checks if the collided tile is an enemy piece
+			//Checks if the collided tile is an enemy piece
 			if (this.tiles [x + i] [y].getText ().charAt (0) == 'W')
 			{
 			    this.tiles [x + i] [y].setEnabled (true); //Re-enables the tile
-			    this.tiles [x + i] [y].setBackground (Color.orange); //sets the enemy's tile to orange to indicate it can be captured
+			    this.tiles [x + i] [y].setBackground (Color.orange); //Sets the enemy's tile to orange to indicate it can be captured
 			    break;
 			}
 		    }
@@ -2046,47 +2047,47 @@ public class Chess extends JFrame implements ActionListener
 	    }
 	}
 
-	//for loop checks for collisions going up from the current position
+	//For loop checks for collisions going up from the current position
 	for (int i = 1 ; i < 8 ; i++)
 	{
-	    //if statement makes sure not out of bounds statements are tripped
+	    //If statement makes sure not out of bounds statements are tripped
 	    if ((x - i) > -1)
 	    {
-		//checks if the tile is not blank
+		//Checks if the tile is not blank
 		if (this.tiles [x - i] [y].getText ().charAt (0) != ' ')
 		{
-		    //for loop disables the colliding tile and everything past it
+		    //For loop disables the colliding tile and everything past it
 		    for (int ii = i ; ii < 8 ; ii++)
 		    {
-			this.tiles [x - ii] [y].setEnabled (false); //disables the tiles
+			this.tiles [x - ii] [y].setEnabled (false); //Disables the tiles
 
-			//if statement makes sure not out of bounds statements are tripped
+			//If statement makes sure not out of bounds statements are tripped
 			if (x - ii == 0)
 			{
-			    break; //breaks the loop before it goes out of bounds
+			    break; //Breaks the loop before it goes out of bounds
 			}
 		    }
 
-		    //checks if it's the white team's turn
+		    //Checks if it's the white team's turn
 		    if (turn % 2 != 0)
 		    {
-			//checks if the collided tile is an enemy piece
+			//Checks if the collided tile is an enemy piece
 			if (this.tiles [x - i] [y].getText ().charAt (0) == 'B')
 			{
 			    this.tiles [x - i] [y].setEnabled (true); //Re-enables the tile
-			    this.tiles [x - i] [y].setBackground (Color.orange); //sets the enemy's tile to orange to indicate it can be captured
+			    this.tiles [x - i] [y].setBackground (Color.orange); //Sets the enemy's tile to orange to indicate it can be captured
 			    break;
 			}
 		    }
 
-		    //checks if it's the black team's turn
+		    //Checks if it's the black team's turn
 		    else if (turn % 2 == 0)
 		    {
-			//checks if the collided tile is an enemy piece
+			//Checks if the collided tile is an enemy piece
 			if (this.tiles [x - i] [y].getText ().charAt (0) == 'W')
 			{
 			    this.tiles [x - i] [y].setEnabled (true); //Re-enables the tile
-			    this.tiles [x - i] [y].setBackground (Color.orange); //sets the enemy's tile to orange to indicate it can be captured
+			    this.tiles [x - i] [y].setBackground (Color.orange); //Sets the enemy's tile to orange to indicate it can be captured
 			    break;
 			}
 		    }
@@ -2095,47 +2096,47 @@ public class Chess extends JFrame implements ActionListener
 	    }
 	}
 
-	//for loop checks for collisions going right from the current position
+	//For loop checks for collisions going right from the current position
 	for (int i = 1 ; i < 8 ; i++)
 	{
-	    //if statement makes sure not out of bounds statements are tripped
+	    //If statement makes sure not out of bounds statements are tripped
 	    if ((y + i) < 8)
 	    {
-		//checks if the tile is not blank
+		//Checks if the tile is not blank
 		if (this.tiles [x] [y + i].getText ().charAt (0) != ' ')
 		{
 		    //for loop disables the colliding tile and everything past it
 		    for (int ii = i ; ii < 8 ; ii++)
 		    {
-			this.tiles [x] [y + ii].setEnabled (false); //disables the tiles
+			this.tiles [x] [y + ii].setEnabled (false); //Disables the tiles
 
-			//if statement makes sure not out of bounds statements are tripped
+			//If statement makes sure not out of bounds statements are tripped
 			if (y + ii == 7)
 			{
-			    break; //breaks the loop before it goes out of bounds
+			    break; //Breaks the loop before it goes out of bounds
 			}
 		    }
 
-		    //checks if it's the white team's turn
+		    //Checks if it's the white team's turn
 		    if (this.turn % 2 != 0)
 		    {
-			//checks if the collided tile is an enemy piece
+			//Checks if the collided tile is an enemy piece
 			if (this.tiles [x] [y + i].getText ().charAt (0) == 'B')
 			{
 			    this.tiles [x] [y + i].setEnabled (true); //Re-enables the tile
-			    this.tiles [x] [y + i].setBackground (Color.orange); //sets the enemy's tile to orange to indicate it can be captured
+			    this.tiles [x] [y + i].setBackground (Color.orange); //Sets the enemy's tile to orange to indicate it can be captured
 			    break;
 			}
 		    }
 
-		    //checks if it's the black team's turn
+		    //Checks if it's the black team's turn
 		    else if (this.turn % 2 == 0)
 		    {
-			//checks if the collided tile is an enemy piece
+			//Checks if the collided tile is an enemy piece
 			if (this.tiles [x] [y + i].getText ().charAt (0) == 'W')
 			{
 			    this.tiles [x] [y + i].setEnabled (true); //Re-enables the tile
-			    this.tiles [x] [y + i].setBackground (Color.orange); //sets the enemy's tile to orange to indicate it can be captured
+			    this.tiles [x] [y + i].setBackground (Color.orange); //Sets the enemy's tile to orange to indicate it can be captured
 			    break;
 			}
 		    }
@@ -2144,47 +2145,47 @@ public class Chess extends JFrame implements ActionListener
 	    }
 	}
 
-	//for loop checks for collisions going left from the current position
+	//For loop checks for collisions going left from the current position
 	for (int i = 1 ; i < 8 ; i++)
 	{
-	    //if statement makes sure not out of bounds statements are tripped
+	    //If statement makes sure not out of bounds statements are tripped
 	    if ((y - i) > -1)
 	    {
-		//checks if the tile is not blank
+		//Checks if the tile is not blank
 		if (this.tiles [x] [y - i].getText ().charAt (0) != ' ')
 		{
-		    //for loop disables the colliding tile and everything past it
+		    //For loop disables the colliding tile and everything past it
 		    for (int ii = i ; ii < 8 ; ii++)
 		    {
-			this.tiles [x] [y - ii].setEnabled (false); //disables the tiles
+			this.tiles [x] [y - ii].setEnabled (false); //Disables the tiles
 
-			//if statement makes sure not out of bounds statements are tripped
+			//If statement makes sure not out of bounds statements are tripped
 			if (y - ii == 0)
 			{
-			    break; //breaks the loop before it goes out of bounds
+			    break; //Breaks the loop before it goes out of bounds
 			}
 		    }
 
-		    //checks if it's the white team's turn
+		    //Checks if it's the white team's turn
 		    if (this.turn % 2 != 0)
 		    {
-			//checks if the collided tile is an enemy piece
+			//Checks if the collided tile is an enemy piece
 			if (this.tiles [x] [y - i].getText ().charAt (0) == 'B')
 			{
 			    this.tiles [x] [y - i].setEnabled (true); //Re-enables the tile
-			    this.tiles [x] [y - i].setBackground (Color.orange); //sets the enemy's tile to orange to indicate it can be captured
+			    this.tiles [x] [y - i].setBackground (Color.orange); //Sets the enemy's tile to orange to indicate it can be captured
 			    break;
 			}
 		    }
 
-		    //checks if it's the black team's turn
+		    //Checks if it's the black team's turn
 		    else if (this.turn % 2 == 0)
 		    {
-			//checks if the collided tile is an enemy piece
+			//Checks if the collided tile is an enemy piece
 			if (this.tiles [x] [y - i].getText ().charAt (0) == 'W')
 			{
 			    this.tiles [x] [y - i].setEnabled (true); //Re-enables the tile
-			    this.tiles [x] [y - i].setBackground (Color.orange); //sets the enemy's tile to orange to indicate it can be captured
+			    this.tiles [x] [y - i].setBackground (Color.orange); //Sets the enemy's tile to orange to indicate it can be captured
 			    break;
 			}
 		    }
@@ -2193,49 +2194,49 @@ public class Chess extends JFrame implements ActionListener
 	    }
 	}
 
-	//nested for loops scan board for enabled tiles
+	//Nested for loops scan board for enabled tiles
 	for (int i = 0 ; i < 8 ; i++)
 	{
 	    for (int ii = 0 ; ii < 8 ; ii++)
 	    {
-		//checks if tile is enabled
+		//Checks if tile is enabled
 		if (this.tiles [i] [ii].isEnabled () == true)
 		{
-		    this.tiles [i] [ii].setBackground (Color.yellow); //colors enabled tiles yellow to indicate a legal move
+		    this.tiles [i] [ii].setBackground (Color.yellow); //Colors enabled tiles yellow to indicate a legal move
 
-		    //checks if enabled tile is an enemy piece
+		    //Checks if enabled tile is an enemy piece
 		    if (this.turn % 2 != 0 && this.tiles [i] [ii].getText ().charAt (0) == 'B')
 		    {
-			this.tiles [i] [ii].setBackground (Color.orange); //sets the enemy's tile to orange to indicate it can be captured
+			this.tiles [i] [ii].setBackground (Color.orange); //Sets the enemy's tile to orange to indicate it can be captured
 		    }
 
-		    //checks if enabled tile is an enemy piece
+		    //Checks if enabled tile is an enemy piece
 		    if (this.turn % 2 == 0 && this.tiles [i] [ii].getText ().charAt (0) == 'W')
 		    {
-			this.tiles [i] [ii].setBackground (Color.orange); //sets the enemy's tile to orange to indicate it can be captured
+			this.tiles [i] [ii].setBackground (Color.orange); //Sets the enemy's tile to orange to indicate it can be captured
 		    }
 		}
 	    }
 	}
-	if (this.ColourCheck == "WHITE") //checks if the color of the original tile was white
+	if (this.ColourCheck == "WHITE") //Checks if the color of the original tile was white
 	{
-	    this.tiles [x] [y].setBackground (Color.WHITE); //sets the color of the tile to white
+	    this.tiles [x] [y].setBackground (Color.WHITE); //Sets the color of the tile to white
 	}
-	else if (this.ColourCheck == "CYAN") //checks if the color of the original tile was cyan
+	else if (this.ColourCheck == "CYAN") //Checks if the color of the original tile was cyan
 	{
-	    this.tiles [x] [y].setBackground (Color.CYAN); //sets the color of the tile to cyan
+	    this.tiles [x] [y].setBackground (Color.CYAN); //Sets the color of the tile to cyan
 	}
-	else if (this.ColourCheck == "BLUE") //checks if the color of the original tile was blue
+	else if (this.ColourCheck == "BLUE") //Checks if the color of the original tile was blue
 	{
-	    this.tiles [x] [y].setBackground (Color.BLUE); //sets the color of the tile to blue
+	    this.tiles [x] [y].setBackground (Color.BLUE); //Sets the color of the tile to blue
 	}
-	else if (this.ColourCheck == "BLACK") //checks if the color of the original tile was black
+	else if (this.ColourCheck == "BLACK") //Checks if the color of the original tile was black
 	{
-	    this.tiles [x] [y].setBackground (Color.BLACK); //sets the color of the tile to black
+	    this.tiles [x] [y].setBackground (Color.BLACK); //Sets the color of the tile to black
 	}
-	else if (this.ColourCheck == "RED") //checks if the color of the original tile was red
+	else if (this.ColourCheck == "RED") //Checks if the color of the original tile was red
 	{
-	    this.tiles [x] [y].setBackground (Color.RED); //sets the color of the tile to red
+	    this.tiles [x] [y].setBackground (Color.RED); //Sets the color of the tile to red
 	}
     }
 
@@ -2266,22 +2267,22 @@ public class Chess extends JFrame implements ActionListener
 	    this.ColourCheck = "BLACK"; //Records the tile color so it can be recolored later
 	}
 
-	//for loop checks for collisions going down and right from the current position
+	//For loop checks for collisions going down and right from the current position
 	for (int i = 1 ; i < 8 ; i++)
 	{
-	    //if statement makes sure no out of bounds exceptions are tripped
+	    //If statement makes sure no out of bounds exceptions are tripped
 	    if ((x + i) < 8 && (y + i) < 8)
 	    {
 		//Checks if the tile is not empty
 		if (this.tiles [x + i] [y + i].getText ().charAt (0) != ' ')
 		{
-		    //if the tile was not blank, disables it and everything past it
+		    //If the tile was not blank, disables it and everything past it
 		    for (int ii = i ; ii < 8 ; ii++)
 		    {
-			//if statement makes sure no out of bounds exceptions are tripped
+			//If statement makes sure no out of bounds exceptions are tripped
 			if ((x + ii) < 8 && (y + ii) < 8)
 			{
-			    this.tiles [x + ii] [y + ii].setEnabled (false); //disables the tiles
+			    this.tiles [x + ii] [y + ii].setEnabled (false); //Disables the tiles
 			}
 		    }
 
@@ -2311,22 +2312,22 @@ public class Chess extends JFrame implements ActionListener
 	    }
 	}
 
-	//for loop checks for collisions going down and left from the current position
+	//For loop checks for collisions going down and left from the current position
 	for (int i = 1 ; i < 8 ; i++)
 	{
-	    //if statement makes sure no out of bounds exceptions are tripped
+	    //If statement makes sure no out of bounds exceptions are tripped
 	    if ((x + i) < 8 && (y - i) > -1)
 	    {
 		//Checks if the tile is not empty
 		if (this.tiles [x + i] [y - i].getText ().charAt (0) != ' ')
 		{
-		    //if the tile was not blank, disables it and everything past it
+		    //If the tile was not blank, disables it and everything past it
 		    for (int ii = i ; ii < 8 ; ii++)
 		    {
-			//if statement makes sure no out of bounds exceptions are tripped
+			//If statement makes sure no out of bounds exceptions are tripped
 			if ((x + ii) < 8 && (y - ii) > -1)
 			{
-			    this.tiles [x + ii] [y - ii].setEnabled (false); //disables the tiles
+			    this.tiles [x + ii] [y - ii].setEnabled (false); //Disables the tiles
 			}
 		    }
 
@@ -2356,19 +2357,19 @@ public class Chess extends JFrame implements ActionListener
 	    }
 	}
 
-	//for loop checks for collisions going up and right from the current position
+	//For loop checks for collisions going up and right from the current position
 	for (int i = 1 ; i < 8 ; i++)
 	{
-	    //if statement makes sure no out of bounds exceptions are tripped
+	    //If statement makes sure no out of bounds exceptions are tripped
 	    if ((x - i) > -1 && (y + i) < 8)
 	    {
 		//Checks if the tile is not empty
 		if (this.tiles [x - i] [y + i].getText ().charAt (0) != ' ')
 		{
-		    //if the tile was not blank, disables it and everything past it
+		    //If the tile was not blank, disables it and everything past it
 		    for (int ii = i ; ii < 8 ; ii++)
 		    {
-			//if statement makes sure no out of bounds exceptions are tripped
+			//If statement makes sure no out of bounds exceptions are tripped
 			if ((x - ii) > -1 && (y + ii) < 8)
 			{
 			    this.tiles [x - ii] [y + ii].setEnabled (false); //disables the tiles
@@ -2401,22 +2402,22 @@ public class Chess extends JFrame implements ActionListener
 	    }
 	}
 
-	//for loop checks for collisions going up and left from the current position
+	//For loop checks for collisions going up and left from the current position
 	for (int i = 1 ; i < 8 ; i++)
 	{
-	    //if statement makes sure no out of bounds exceptions are tripped
+	    //If statement makes sure no out of bounds exceptions are tripped
 	    if ((x - i) > -1 && (y - i) > -1)
 	    {
 		//Checks if the tile is not empty
 		if (this.tiles [x - i] [y - i].getText ().charAt (0) != ' ')
 		{
-		    //if the tile was not blank, disables it and everything past it
+		    //If the tile was not blank, disables it and everything past it
 		    for (int ii = i ; ii < 8 ; ii++)
 		    {
-			//if statement makes sure no out of bounds exceptions are tripped
+			//If statement makes sure no out of bounds exceptions are tripped
 			if ((x - ii) > -1 && (y - ii) > -1)
 			{
-			    this.tiles [x - ii] [y - ii].setEnabled (false); //disables the tiles
+			    this.tiles [x - ii] [y - ii].setEnabled (false); //Disables the tiles
 			}
 		    }
 
@@ -2451,44 +2452,44 @@ public class Chess extends JFrame implements ActionListener
 	{
 	    for (int ii = 0 ; ii < 8 ; ii++)
 	    {
-		//checks if tile is enabled
+		//Checks if tile is enabled
 		if (this.tiles [i] [ii].isEnabled () == true)
 		{
-		    this.tiles [i] [ii].setBackground (Color.yellow); //colors enabled tiles yellow to show it's a legal move
+		    this.tiles [i] [ii].setBackground (Color.yellow); //Colors enabled tiles yellow to show it's a legal move
 
-		    //checks if it is the white teams turn, and if the enabled button is a black piece
+		    //Checks if it is the white teams turn, and if the enabled button is a black piece
 		    if (turn % 2 != 0 && this.tiles [i] [ii].getText ().charAt (0) == 'B')
 		    {
-			this.tiles [i] [ii].setBackground (Color.orange);   //colors enemy piece orange to indicate a legal capture move
+			this.tiles [i] [ii].setBackground (Color.orange); //Colors enemy piece orange to indicate a legal capture move
 		    }
 
-		    //checks if it is the black teams turn, and if the enabled button is a white piece
+		    //Checks if it is the black teams turn, and if the enabled button is a white piece
 		    if (turn % 2 == 0 && this.tiles [i] [ii].getText ().charAt (0) == 'W')
 		    {
-			this.tiles [i] [ii].setBackground (Color.orange); //colors enemy piece orange to indicate a legal capture move
+			this.tiles [i] [ii].setBackground (Color.orange); //Colors enemy piece orange to indicate a legal capture move
 		    }
 		}
 	    }
 	}
-	if (this.ColourCheck == "WHITE") //checks if the color of the original tile was white
+	if (this.ColourCheck == "WHITE") //Checks if the color of the original tile was white
 	{
 	    this.tiles [x] [y].setBackground (Color.WHITE); //sets the color of the tile to white
 	}
-	else if (this.ColourCheck == "CYAN") //checks if the color of the original tile was cyan
+	else if (this.ColourCheck == "CYAN") //Checks if the color of the original tile was cyan
 	{
 	    this.tiles [x] [y].setBackground (Color.CYAN); //sets the color of the tile to cyan
 	}
-	else if (this.ColourCheck == "BLUE") //checks if the color of the original tile was blue
+	else if (this.ColourCheck == "BLUE") //Checks if the color of the original tile was blue
 	{
 	    this.tiles [x] [y].setBackground (Color.BLUE); //sets the color of the tile to blue
 	}
-	else if (this.ColourCheck == "BLACK") //checks if the color of the original tile was black
+	else if (this.ColourCheck == "BLACK") //Checks if the color of the original tile was black
 	{
 	    this.tiles [x] [y].setBackground (Color.BLACK); //sets the color of the tile to black
 	}
-	else if (this.ColourCheck == "RED") //checks if the color of the original tile was red
+	else if (this.ColourCheck == "RED") //Checks if the color of the original tile was red
 	{
-	    this.tiles [x] [y].setBackground (Color.RED); //sets the color of the tile to red
+	    this.tiles [x] [y].setBackground (Color.RED); //Sets the color of the tile to red
 	}
     }
 
@@ -2500,42 +2501,42 @@ public class Chess extends JFrame implements ActionListener
     {
 	if (this.tiles [x] [y].getBackground () == Color.CYAN) //Checks if the color of the current tile is cyan, for later recoloring
 	{
-	    this.ColourCheck = "CYAN";   //Records the tile color so it can be recolored later
+	    this.ColourCheck = "CYAN"; //Records the tile color so it can be recolored later
 	}
 	else if (this.tiles [x] [y].getBackground () == Color.WHITE) //Checks if the color of the current tile is white, for later recoloring
 	{
-	    this.ColourCheck = "WHITE";    //Records the tile color so it can be recolored later
+	    this.ColourCheck = "WHITE"; //Records the tile color so it can be recolored later
 	}
 	else if (this.tiles [x] [y].getBackground () == Color.BLUE) //Checks if the color of the current tile is blue, for later recoloring
 	{
-	    this.ColourCheck = "BLUE";   //Records the tile color so it can be recolored later
+	    this.ColourCheck = "BLUE"; //Records the tile color so it can be recolored later
 	}
 	else if (this.tiles [x] [y].getBackground () == Color.RED) //Checks if the color of the current tile is red, for later recoloring
 	{
-	    this.ColourCheck = "RED";    //Records the tile color so it can be recolored later
+	    this.ColourCheck = "RED"; //Records the tile color so it can be recolored later
 	}
 	else if (this.tiles [x] [y].getBackground () == Color.BLACK) //Checks if the color of the current tile is black, for later recoloring
 	{
-	    this.ColourCheck = "BLACK";    //Records the tile color so it can be recolored later
+	    this.ColourCheck = "BLACK"; //Records the tile color so it can be recolored later
 	}
 
-	//for loop checks for collisions going down from the current position
+	//For loop checks for collisions going down from the current position
 	for (int i = 1 ; i < 8 ; i++)
 	{
-	    //if statement makes sure no out of bounds exceptions are tripped
+	    //If statement makes sure no out of bounds exceptions are tripped
 	    if ((x + i) < 8)
 	    {
 		//Checks if the tile is not empty
 		if (this.tiles [x + i] [y].getText ().charAt (0) != ' ')
 		{
-		    //if the tile was not blank, disables it and everything past it
+		    //If the tile was not blank, disables it and everything past it
 		    for (int ii = i ; ii < 8 ; ii++)
 		    {
-			this.tiles [x + ii] [y].setEnabled (false); //disables the tiles
+			this.tiles [x + ii] [y].setEnabled (false); //Disables the tiles
 			//If statement makes sure no out of bounds exceptions are tripped
 			if (x + ii == 7)
 			{
-			    break; //breaks the loop before it goes out of bounds
+			    break; //Breaks the loop before it goes out of bounds
 			}
 		    }
 
@@ -2546,7 +2547,7 @@ public class Chess extends JFrame implements ActionListener
 			if (this.tiles [x + i] [y].getText ().charAt (0) == 'B')
 			{
 			    this.tiles [x + i] [y].setEnabled (true);   //Re-enables the tile
-			    this.tiles [x + i] [y].setBackground (Color.orange);    //sets the enemy's tile to orange
+			    this.tiles [x + i] [y].setBackground (Color.orange); //Sets the enemy's tile to orange
 
 			    break;
 			}
@@ -2559,7 +2560,7 @@ public class Chess extends JFrame implements ActionListener
 			if (this.tiles [x + i] [y].getText ().charAt (0) == 'W')
 			{
 			    this.tiles [x + i] [y].setEnabled (true);   //Re-enables the tile
-			    this.tiles [x + i] [y].setBackground (Color.orange); //sets the enemy's tile to orange
+			    this.tiles [x + i] [y].setBackground (Color.orange); //Sets the enemy's tile to orange
 			    break;
 			}
 		    }
@@ -2568,23 +2569,23 @@ public class Chess extends JFrame implements ActionListener
 	    }
 	}
 
-	//for loop checks for collisions going up from the current position
+	//For loop checks for collisions going up from the current position
 	for (int i = 1 ; i < 8 ; i++)
 	{
-	    //if statement makes sure no out of bounds exceptions are tripped
+	    //If statement makes sure no out of bounds exceptions are tripped
 	    if ((x - i) > -1)
 	    {
 		//Checks if the tile is not empty
 		if (this.tiles [x - i] [y].getText ().charAt (0) != ' ')
 		{
-		    //if the tile was not blank, disables it and everything past it
+		    //If the tile was not blank, disables it and everything past it
 		    for (int ii = i ; ii < 8 ; ii++)
 		    {
-			this.tiles [x - ii] [y].setEnabled (false); //disables the tiles
+			this.tiles [x - ii] [y].setEnabled (false); //Disables the tiles
 			//If statement makes sure no out of bounds exceptions are tripped
 			if (x - ii == 0)
 			{
-			    break; //breaks the loop before it goes out of bounds
+			    break; //Breaks the loop before it goes out of bounds
 			}
 		    }
 
@@ -2595,7 +2596,7 @@ public class Chess extends JFrame implements ActionListener
 			if (this.tiles [x - i] [y].getText ().charAt (0) == 'B')
 			{
 			    this.tiles [x - i] [y].setEnabled (true); //Re-enables the tile
-			    this.tiles [x - i] [y].setBackground (Color.orange); //sets the enemy's tile to orange
+			    this.tiles [x - i] [y].setBackground (Color.orange); //Sets the enemy's tile to orange
 			    break;
 			}
 		    }
@@ -2607,7 +2608,7 @@ public class Chess extends JFrame implements ActionListener
 			if (this.tiles [x - i] [y].getText ().charAt (0) == 'W')
 			{
 			    this.tiles [x - i] [y].setEnabled (true); //Re-enables the tile
-			    this.tiles [x - i] [y].setBackground (Color.orange); //sets the enemy's tile to orange
+			    this.tiles [x - i] [y].setBackground (Color.orange); //Sets the enemy's tile to orange
 			    break;
 			}
 		    }
@@ -2616,23 +2617,23 @@ public class Chess extends JFrame implements ActionListener
 	    }
 	}
 
-	//for loop checks for collisions going right from the current position
+	//For loop checks for collisions going right from the current position
 	for (int i = 1 ; i < 8 ; i++)
 	{
-	    //if statement makes sure no out of bounds exceptions are tripped
+	    //If statement makes sure no out of bounds exceptions are tripped
 	    if ((y + i) < 8)
 	    {
 		//Checks if the tile is not empty
 		if (this.tiles [x] [y + i].getText ().charAt (0) != ' ')
 		{
-		    //if the tile was not blank, disables it and everything past it
+		    //If the tile was not blank, disables it and everything past it
 		    for (int ii = i ; ii < 8 ; ii++)
 		    {
-			this.tiles [x] [y + ii].setEnabled (false); //disables the tiles
+			this.tiles [x] [y + ii].setEnabled (false); //Disables the tiles
 			//If statement makes sure no out of bounds exceptions are tripped
 			if (y + ii == 7)
 			{
-			    break; //breaks the loop before it goes out of bounds
+			    break; //Breaks the loop before it goes out of bounds
 			}
 		    }
 
@@ -2643,7 +2644,7 @@ public class Chess extends JFrame implements ActionListener
 			if (this.tiles [x] [y + i].getText ().charAt (0) == 'B')
 			{
 			    this.tiles [x] [y + i].setEnabled (true); //Re-enables the tile
-			    this.tiles [x] [y + i].setBackground (Color.orange); //sets the enemy's tile to orange
+			    this.tiles [x] [y + i].setBackground (Color.orange); //Sets the enemy's tile to orange
 			    break;
 			}
 		    }
@@ -2655,7 +2656,7 @@ public class Chess extends JFrame implements ActionListener
 			if (this.tiles [x] [y + i].getText ().charAt (0) == 'W')
 			{
 			    this.tiles [x] [y + i].setEnabled (true); //Re-enables the tile
-			    this.tiles [x] [y + i].setBackground (Color.orange); //sets the enemy's tile to orange
+			    this.tiles [x] [y + i].setBackground (Color.orange); //Sets the enemy's tile to orange
 			    break;
 			}
 		    }
@@ -2664,23 +2665,23 @@ public class Chess extends JFrame implements ActionListener
 	    }
 	}
 
-	//for loop checks for collisions going left from the current position
+	//For loop checks for collisions going left from the current position
 	for (int i = 1 ; i < 8 ; i++)
 	{
-	    //if statement makes sure no out of bounds exceptions are tripped
+	    //If statement makes sure no out of bounds exceptions are tripped
 	    if ((y - i) > -1)
 	    {
 		//Checks if the tile is not empty
 		if (this.tiles [x] [y - i].getText ().charAt (0) != ' ')
 		{
-		    //if the tile was not blank, disables it and everything past it
+		    //If the tile was not blank, disables it and everything past it
 		    for (int ii = i ; ii < 8 ; ii++)
 		    {
-			this.tiles [x] [y - ii].setEnabled (false); //disables the tiles
+			this.tiles [x] [y - ii].setEnabled (false); //Disables the tiles
 			//If statement makes sure no out of bounds exceptions are tripped
 			if (y - ii == 0)
 			{
-			    break; //breaks the loop before it goes out of bounds
+			    break; //Breaks the loop before it goes out of bounds
 			}
 		    }
 
@@ -2691,7 +2692,7 @@ public class Chess extends JFrame implements ActionListener
 			if (this.tiles [x] [y - i].getText ().charAt (0) == 'B')
 			{
 			    this.tiles [x] [y - i].setEnabled (true); //Re-enables the tile
-			    this.tiles [x] [y - i].setBackground (Color.orange); //sets the enemy's tile to orange
+			    this.tiles [x] [y - i].setBackground (Color.orange); //Sets the enemy's tile to orange
 			    break;
 			}
 		    }
@@ -2703,7 +2704,7 @@ public class Chess extends JFrame implements ActionListener
 			if (this.tiles [x] [y - i].getText ().charAt (0) == 'W')
 			{
 			    this.tiles [x] [y - i].setEnabled (true); //Re-enables the tile
-			    this.tiles [x] [y - i].setBackground (Color.orange); //sets the enemy's tile to orange
+			    this.tiles [x] [y - i].setBackground (Color.orange); //Sets the enemy's tile to orange
 			    break;
 			}
 		    }
@@ -2712,29 +2713,29 @@ public class Chess extends JFrame implements ActionListener
 	    }
 	}
 
-	//calls the Bcollision method to handle diagonal collision
+	//Calls the Bcollision method to handle diagonal collision
 	BCollision (x, y);  //passes the current position of the queen
 
-	this.tiles [x] [y].setEnabled (true);   //enables current tiles to allow deselection
-	if (this.ColourCheck == "WHITE")     //checks if the color of the original tile was white
+	this.tiles [x] [y].setEnabled (true);   //Enables current tiles to allow deselection
+	if (this.ColourCheck == "WHITE")     //Checks if the color of the original tile was white
 	{
-	    this.tiles [x] [y].setBackground (Color.WHITE); //sets the color of the tile to white
+	    this.tiles [x] [y].setBackground (Color.WHITE); //Sets the color of the tile to white
 	}
-	else if (this.ColourCheck == "CYAN") //checks if the color of the original tile was cyan
+	else if (this.ColourCheck == "CYAN") //Checks if the color of the original tile was cyan
 	{
-	    this.tiles [x] [y].setBackground (Color.CYAN); //sets the color of the tile to white
+	    this.tiles [x] [y].setBackground (Color.CYAN); //Sets the color of the tile to white
 	}
-	else if (this.ColourCheck == "BLUE") //checks if the color of the original tile was blue
+	else if (this.ColourCheck == "BLUE") //Checks if the color of the original tile was blue
 	{
-	    this.tiles [x] [y].setBackground (Color.BLUE); //sets the color of the tile to white
+	    this.tiles [x] [y].setBackground (Color.BLUE); //Sets the color of the tile to white
 	}
-	else if (this.ColourCheck == "BLACK") //checks if the color of the original tile was black
+	else if (this.ColourCheck == "BLACK") //Checks if the color of the original tile was black
 	{
-	    this.tiles [x] [y].setBackground (Color.BLACK); //sets the color of the tile to white
+	    this.tiles [x] [y].setBackground (Color.BLACK); //Sets the color of the tile to white
 	}
-	else if (this.ColourCheck == "RED") //checks if the color of the original tile was red
+	else if (this.ColourCheck == "RED") //Checks if the color of the original tile was red
 	{
-	    this.tiles [x] [y].setBackground (Color.RED); //sets the color of the tile to white
+	    this.tiles [x] [y].setBackground (Color.RED); //Sets the color of the tile to white
 	}
     }
 
@@ -2744,43 +2745,47 @@ public class Chess extends JFrame implements ActionListener
     //
     public void Move (int i, int j, int x, int y)  //Imports i and j as the position of the tile to be moved to, and x and y as the position of the tile to be moved from
     {
-	this.tiles [i] [j].setText (this.tiles [x] [y].getText ()); //sets the text of the button at the new position to the text of the old position
-	this.tiles [x] [y].setText (" ");   //clears the text of the button at the old position
-	this.tiles [i] [j].setIcon (this.tiles [x] [y].getIcon ()); //sets the picture of the button at the new position to the text of the old position
-	this.tiles [i] [j].setHorizontalTextPosition (AbstractButton.CENTER);   //positions text properly on the new button position
-	this.tiles [i] [j].setVerticalTextPosition (AbstractButton.BOTTOM);   //positions text properly on the button position
-	this.tiles [x] [y].setIcon (null);  //clears the picture of the button at the old position
+	this.tiles [i] [j].setText (this.tiles [x] [y].getText ()); //Sets the text of the button at the new position to the text of the old position
+	this.tiles [x] [y].setText (" ");   //Clears the text of the button at the old position
+	this.tiles [i] [j].setIcon (this.tiles [x] [y].getIcon ()); //Sets the picture of the button at the new position to the text of the old position
+	this.tiles [i] [j].setHorizontalTextPosition (AbstractButton.CENTER); //Positions text properly on the new button position
+	this.tiles [i] [j].setVerticalTextPosition (AbstractButton.BOTTOM); //Positions text properly on the button position
+	this.tiles [x] [y].setIcon (null); //Clears the picture of the button at the old position
 
-	// for loop scans the board for white pawns at the black end of the board
+	//For loop scans the board for white pawns at the black end of the board
 	for (int ii = 0 ; ii < 8 ; ii++)
 	{
-	    if (this.tiles [0] [ii].getText () == "WPawn")  //If a white pawn is found at the black end of the board
+	    if (this.tiles [0] [ii].getText () == "WPawn") //If a white pawn is found at the black end of the board
 	    {
-		this.tiles [0] [ii].setText ("WQueen"); //changes the text of the pawn at the end of the board to queen
-		this.tiles [0] [ii].setIcon (wqueen); //changes the picture of the pawn at the end of the board to queen
-		this.tiles [0] [ii].setHorizontalTextPosition (AbstractButton.CENTER); //positions text properly on the button
-		this.tiles [0] [ii].setVerticalTextPosition (AbstractButton.BOTTOM); //positions text properly on the button
+		this.tiles [0] [ii].setText ("WQueen"); //Changes the text of the pawn at the end of the board to queen
+		this.tiles [0] [ii].setIcon (wqueen); //Changes the picture of the pawn at the end of the board to queen
+		this.tiles [0] [ii].setHorizontalTextPosition (AbstractButton.CENTER); //Positions text properly on the button
+		this.tiles [0] [ii].setVerticalTextPosition (AbstractButton.BOTTOM); //Positions text properly on the button
 	    }
 	}
 
-	// for loop scans the board for black pawns at the white end of the board
+	//For loop scans the board for black pawns at the white end of the board
 	for (int ii = 0 ; ii < 8 ; ii++)
 	{
 	    if (this.tiles [7] [ii].getText () == "BPawn") //If a black pawn is found at the white end of the board
 	    {
-		this.tiles [7] [ii].setText ("BQueen"); //changes the text of the pawn at the end of the board to queen
-		this.tiles [7] [ii].setIcon (bqueen); //changes the picture of the pawn at the end of the board to queen
-		this.tiles [7] [ii].setHorizontalTextPosition (AbstractButton.CENTER); //positions text properly on the button
-		this.tiles [7] [ii].setVerticalTextPosition (AbstractButton.BOTTOM); //positions text properly on the button
+		this.tiles [7] [ii].setText ("BQueen"); //Changes the text of the pawn at the end of the board to queen
+		this.tiles [7] [ii].setIcon (bqueen); //Changes the picture of the pawn at the end of the board to queen
+		this.tiles [7] [ii].setHorizontalTextPosition (AbstractButton.CENTER); //Positions text properly on the button
+		this.tiles [7] [ii].setVerticalTextPosition (AbstractButton.BOTTOM); //Positions text properly on the button
 	    }
 	}
     }
 
 
+    //
+    //Method used to colour the chess board based on what the user chooses in the Settings page
+    //
     public void boardcolour ()
     {
 	this.count = 0;
 
+	//For loop used to colour the 8x8 Chess board
 	for (int ii = 0 ; ii < 8 ; ii++)
 	{
 	    for (int jj = 0 ; jj < 8 ; jj++)
@@ -2791,32 +2796,42 @@ public class Chess extends JFrame implements ActionListener
 
 		    if (row == 0)
 		    {
+			//If the first board is picked within Settings
 			if (this.board == 1)
 			{
+			    //If count mod 2 is 0, then colour the tile cyan, otherwise colour it white
 			    this.tiles [ii] [jj].setBackground (this.count % 2 == 0 ? Color.cyan:
 			    Color.white);
 			}
 
+			//If the second board is picked within Settings
 			if (this.board == 2)
 			{
+			    //If count mod 2 is 0, then colour the tile red, otherwise colour it white
 			    this.tiles [ii] [jj].setBackground (this.count % 2 == 0 ? Color.red:
 			    Color.white);
 			}
 
+			//If the third board is picked within Settings
 			if (this.board == 3)
 			{
+			    //If count mod 2 is 0, then colour the tile cyan, otherwise colour it red
 			    this.tiles [ii] [jj].setBackground (this.count % 2 == 0 ? Color.cyan:
 			    Color.red);
 			}
 
+			//If the fourth board is picked within Settings
 			if (this.board == 4)
 			{
+			    //If count mod 2 is 0, then colour the tile black, otherwise colour it white
 			    this.tiles [ii] [jj].setBackground (this.count % 2 == 0 ? Color.black:
 			    Color.white);
 			}
 
+			//If the fifth board is picked within Settings
 			if (this.board == 5)
 			{
+			    //If count mod 2 is 0, then colour the tile blue, otherwise colour it white
 			    this.tiles [ii] [jj].setBackground (this.count % 2 == 0 ? Color.blue:
 			    Color.white);
 			}
@@ -2824,38 +2839,48 @@ public class Chess extends JFrame implements ActionListener
 
 		    else
 		    {
+			//If the first board is picked within Settings
 			if (this.board == 1)
 			{
+			    //If count mod 2 is 0, then colour the tile white, otherwise colour it cyan
 			    this.tiles [ii] [jj].setBackground (this.count % 2 == 0 ? Color.white:
 			    Color.cyan);
 			}
 
+			//If the second board is picked within Settings
 			if (this.board == 2)
 			{
+			    //If count mod 2 is 0, then colour the tile white, otherwise colour it red
 			    this.tiles [ii] [jj].setBackground (this.count % 2 == 0 ? Color.white:
 			    Color.red);
 			}
 
+			//If the third board is picked within Settings
 			if (this.board == 3)
 			{
+			    //If count mod 2 is 0, then colour the tile red, otherwise colour it cyan
 			    this.tiles [ii] [jj].setBackground (this.count % 2 == 0 ? Color.red:
 			    Color.cyan);
 			}
 
+			//If the fourth board is picked within Settings
 			if (this.board == 4)
 			{
+			    //If count mod 2 is 0, then colour the tile white, otherwise colour it black
 			    this.tiles [ii] [jj].setBackground (this.count % 2 == 0 ? Color.white:
 			    Color.black);
 			}
 
+			//If the fifth board is picked within Settings
 			if (this.board == 5)
 			{
+			    //If count mod 2 is 0, then colour the tile white, otherwise colour it blue
 			    this.tiles [ii] [jj].setBackground (this.count % 2 == 0 ? Color.white:
 			    Color.blue);
 			}
 		    }
 		}
-		this.count++;
+		this.count++; //Increment count variable
 	    }
 	}
     }
@@ -2866,11 +2891,11 @@ public class Chess extends JFrame implements ActionListener
     //
     public void Check ()
     {
-	this.WhiteCheck = false;     //Reset variable to make sure it does not repeat itself
-	this.BlackCheck = false;     //Reset variable to make sure it does not repeat itself
-	this.CheckPiece = "";        //Reset variable to make sure it does not repeat itself
+	this.WhiteCheck = false; //Reset variable to make sure it does not repeat itself
+	this.BlackCheck = false; //Reset variable to make sure it does not repeat itself
+	this.CheckPiece = ""; //Reset variable to make sure it does not repeat itself
 
-	if (this.turn % 2 != 0)      //If it is Player 1's turn
+	if (this.turn % 2 != 0) //If it is Player 1's turn
 	{
 	    //Nested for loops scan the board for enemy pieces
 	    for (int i = 0 ; i < 8 ; i++)
@@ -2880,35 +2905,35 @@ public class Chess extends JFrame implements ActionListener
 		    //Checks if the tiles is an enemy queen
 		    if (this.tiles [i] [j].getText () == "WQueen")
 		    {
-			WQueen (i, j);      //Calling Queen method to check if it can capture the enemy king
-			QCollision (i, j);  //Calling Queen collision method to check if it can capture the enemy king
+			WQueen (i, j); //Calling Queen method to check if it can capture the enemy king
+			QCollision (i, j); //Calling Queen collision method to check if it can capture the enemy king
 
-			//If Queen was found, Nested for loops scan for the black king
+			//If Queen was found, nested for loops scan for the black king
 			for (int ii = 0 ; ii < 8 ; ii++)
 			{
 			    for (int jj = 0 ; jj < 8 ; jj++)
 			    {
 				if (this.tiles [ii] [jj].getText () == "BKing") //If the tile is the black king
 				{
-				    if (this.tiles [ii] [jj].getBackground () == Color.orange)  //Checks if the black king has been highlighted as capturable
+				    if (this.tiles [ii] [jj].getBackground () == Color.orange) //Checks if the black king has been highlighted as capturable
 				    {
-					this.BlackCheck = true;   //Boolean is tripped to notify player they are in check
+					this.BlackCheck = true; //Boolean is tripped to notify player they are in check
 				    }
 				}
 			    }
 			}
 		    }
-		    if (this.BlackCheck == true)     //Checks if the boolean has been tripped
+		    if (this.BlackCheck == true) //Checks if the boolean has been tripped
 		    {
-			this.CheckPiece = "WQueen";  //Records the piece that put the king in check
-			break;  //breaks out of the for loop because the check has succeeded
+			this.CheckPiece = "WQueen"; //Records the piece that put the king in check
+			break; //breaks out of the for loop because the check has succeeded
 		    }
 		    //Checks if the tiles is an enemy king
 		    if (this.tiles [i] [j].getText () == "WKing")
 		    {
 			WKing (i, j); //Calling King method to check if it can capture the enemy king
 
-			//If King was found, Nested for loops scan for the black king
+			//If King was found, nested for loops scan for the black king
 			for (int ii = 0 ; ii < 8 ; ii++)
 			{
 			    for (int jj = 0 ; jj < 8 ; jj++)
@@ -2934,7 +2959,7 @@ public class Chess extends JFrame implements ActionListener
 			WBishop (i, j); //Calling Bishop method to check if it can capture the enemy king
 			BCollision (i, j); //Calling Bishop collision method to check if it can capture the enemy king
 
-			//If Bishop was found, Nested for loops scan for the black king
+			//If Bishop was found, nested for loops scan for the black king
 			for (int ii = 0 ; ii < 8 ; ii++)
 			{
 			    for (int jj = 0 ; jj < 8 ; jj++)
@@ -2960,7 +2985,7 @@ public class Chess extends JFrame implements ActionListener
 			WRook (i, j); //Calling Rook method to check if it can capture the enemy king
 			RCollision (i, j); //Calling Rook collision method to check if it can capture the enemy king
 
-			//If Rook was found, Nested for loops scan for the black king
+			//If Rook was found, nested for loops scan for the black king
 			for (int ii = 0 ; ii < 8 ; ii++)
 			{
 			    for (int jj = 0 ; jj < 8 ; jj++)
@@ -2985,7 +3010,7 @@ public class Chess extends JFrame implements ActionListener
 		    {
 			WPawn (i, j); //Calling Pawn method to check if it can capture the enemy king
 
-			//If Pawn was found, Nested for loops scan for the black king
+			//If Pawn was found, nested for loops scan for the black king
 			for (int ii = 0 ; ii < 8 ; ii++)
 			{
 			    for (int jj = 0 ; jj < 8 ; jj++)
@@ -3003,14 +3028,14 @@ public class Chess extends JFrame implements ActionListener
 		    if (this.BlackCheck == true) //Checks if the boolean has been tripped
 		    {
 			this.CheckPiece = "WPawn"; //Records the piece that put the king in check
-			break; //breaks out of the for loop because the check has succeeded
+			break; //Breaks out of the for loop because the check has succeeded
 		    }
 		    //Checks if the tiles is an enemy knight
 		    if (this.tiles [i] [j].getText () == "WKnight")
 		    {
 			WKnight (i, j); //Calling Knight method to check if it can capture the enemy king
 
-			//If Knight was found, Nested for loops scan for the black king
+			//If Knight was found, nested for loops scan for the black king
 			for (int ii = 0 ; ii < 8 ; ii++)
 			{
 			    for (int jj = 0 ; jj < 8 ; jj++)
@@ -3122,7 +3147,7 @@ public class Chess extends JFrame implements ActionListener
 		    if (this.WhiteCheck == true) //Checks if the boolean has been tripped
 		    {
 			this.CheckPiece = "BBishop"; //Records the piece that put the king in check
-			break; //breaks out of the for loop because the check has succeeded
+			break; //Breaks out of the for loop because the check has succeeded
 		    }
 		    //Checks if the tiles is an enemy rook
 		    if (this.tiles [i] [j].getText () == "BRook")
@@ -3148,7 +3173,7 @@ public class Chess extends JFrame implements ActionListener
 		    if (this.WhiteCheck == true) //Checks if the boolean has been tripped
 		    {
 			this.CheckPiece = "BRook"; //Records the piece that put the king in check
-			break; //breaks out of the for loop because the check has succeeded
+			break; //Breaks out of the for loop because the check has succeeded
 		    }
 		    //Checks if the tiles is an enemy pawn
 		    if (this.tiles [i] [j].getText () == "BPawn")
@@ -3173,7 +3198,7 @@ public class Chess extends JFrame implements ActionListener
 		    if (this.WhiteCheck == true) //Checks if the boolean has been tripped
 		    {
 			this.CheckPiece = "BPawn"; //Records the piece that put the king in check
-			break; //breaks out of the for loop because the check has succeeded
+			break; //Breaks out of the for loop because the check has succeeded
 		    }
 		    //Checks if the tiles is an enemy knight
 		    if (this.tiles [i] [j].getText () == "BKnight")
@@ -3203,7 +3228,7 @@ public class Chess extends JFrame implements ActionListener
 		}
 		if (this.WhiteCheck == true) //Checks if the boolean has been tripped
 		{
-		    break; //breaks out of the for loop because the check has succeeded
+		    break; //Breaks out of the for loop because the check has succeeded
 		}
 	    }
 	    if (this.WhiteCheck == true) //Checks if the boolean has been tripped
